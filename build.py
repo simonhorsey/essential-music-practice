@@ -468,7 +468,9 @@ def build():
 
     redirects = resolve(SITE['redirects'])
     with open(os.path.join(DIST, '_redirects'), 'w') as f:
-        f.write('# Generated from site.json by build.py\n/index.html / 301\n')
+        # With html_handling "none" (which keeps the old .html addresses) Cloudflare does not serve
+        # index.html at "/" by itself, so the home page is proxied to it.
+        f.write('# Generated from site.json by build.py\n/ /index.html 200\n')
         for src, dst in redirects.items():
             f.write('%s %s 301\n' % (src, dst))
     indexable = [p for p in pages if not p['noindex'] and p['slug'] != '404']
