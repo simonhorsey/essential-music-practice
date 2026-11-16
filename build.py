@@ -354,7 +354,7 @@ def offer(key):
     out.append('<section class="section section--dark"><div class="wrap"><div class="center offer__head"><h2>How It Works</h2></div>%s</div></section>' % steps(o['steps']))
     g = SITE['guide']
     out.append('<section class="section"><div class="wrap grid grid--2 offer__split"><div><p class="eyebrow">Your Guide</p>'
-               '<h2>Built by a Teacher Who Has Seen What Works</h2><p class="lede">%s</p>'
+               '<h2>From a Teacher Who Learned It the Slow Way</h2><p class="lede">%s</p>'
                '<p><a class="offer__link" href="/simon-horsey.html">Meet Simon <span aria-hidden="true">→</span></a></p>%s</div>'
                '<ul class="ticks card">%s</ul></div></section>'
                % (e(g['lead']), draft(g['needs_review'], note=True), ''.join('<li>%s</li>' % e(c) for c in g['credentials'])))
@@ -385,7 +385,7 @@ def article_list(pages, section_id, exclude=None, limit=None):
 
 def tips_index(pages):
     out = ['<section class="page-hero"><div class="wrap"><p class="eyebrow" style="color: var(--accent)">Free library</p><h1>Practice Tips</h1>'
-           '<p class="lede">Every article on the site, by topic. New here? Start with the free guide, then pick the topic you need today.</p>'
+           '<p class="lede">Every article on the site, by topic. New here? Start with the free guide, then pick whatever is bothering you this week.</p>'
            '<div class="page-hero__actions">%s</div></div></section><section class="section"><div class="wrap">'
            % btn('Get the Free Guide', '/how-to-practice.html')]
     for s in SITE['sections']:
@@ -405,7 +405,7 @@ def article(page, pages, body):
            '<section class="article"><div class="wrap"><div class="prose">%s</div></div></section>' % body]
     if sec:
         out.append('<section class="section section--tint"><div class="wrap next-step"><div><p class="eyebrow">The full method</p>'
-                   '<h2>Want Every Technique in One Place?</h2><p class="lede">The Practice Code brings it together: seven elements that turn the time you practice into progress you can hear.</p></div>'
+                   '<h2>Want All of It in One Place?</h2><p class="lede">Everything I teach about practice is in The Practice Code: seven elements, a handful of students who got stuck exactly where you are, and no jargon.</p></div>'
                    '<div class="next-step__actions">%s%s</div></div></section>'
                    % (btn('Explore The Practice Code', '/the-practice-code.html', 'btn--dark'), btn('Get the Free Guide', '/how-to-practice.html', 'btn--ghost', arrow=False)))
         related = article_list(pages, page['section'], exclude=page['slug'], limit=9)

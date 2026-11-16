@@ -9,7 +9,7 @@
   "author": "Simon Horsey",
   "locale": "en",
   "title": "Essential Music Practice | Learn How to Practice. Then Hear the Difference.",
-  "description": "The Practice Code: a seven-element method for practicing any musical instrument. A starter book, the full book, an online academy and free practice tips from music teacher Simon Horsey.",
+  "description": "Learn how to practice music so it actually works. The Practice Code: a starter book, the full book, an online academy and free practice tips from music teacher Simon Horsey.",
   "tagline": "Learn how to practice. Then hear the difference.",
   "forms": {
     "newsletter_action": null,
@@ -85,8 +85,8 @@
   "hero": {
     "eyebrow": "Essential Music Practice",
     "heading": "Learn How to Practice. Then Hear the Difference.",
-    "problem": "You can play it at home. Then the lesson comes and it falls apart. You were told to practice more. Nobody showed you how.",
-    "solution": "The Practice Code is a seven-element method for any instrument: accurate from the first note, clear targets instead of clock-watching, and practice that holds up when you perform.",
+    "problem": "“But I could play it at home!” If that is you, I believe you. Nobody ever showed you how to practice. They just told you to do more of it.",
+    "solution": "I'm Simon, a music teacher. The Practice Code is everything I teach about practicing, whatever you play: get it right first, aim at a target instead of the clock, and practice what you will perform.",
     "secondary_cta": {
       "label": "Get the Free Guide",
       "href": "/how-to-practice.html"
@@ -95,18 +95,18 @@
   "trust": {
     "label": "The seven elements",
     "items": [
-      "Accuracy",
-      "Targets",
-      "Segmentation",
-      "Active listening",
-      "Environment",
-      "Review",
-      "Performance"
+      "100% accuracy",
+      "Targets, not time",
+      "Small steps slowly",
+      "Listen",
+      "Set the scene",
+      "Review, review, review",
+      "Practice what you perform"
     ]
   },
   "paths": {
     "eyebrow": "Ways to Learn the Method",
-    "heading": "Start Where You Are. Move Up When You Are Ready.",
+    "heading": "Start Where You Are. Move Up When You're Ready.",
     "aside": {
       "text": "Not sure where to start?",
       "label": "Get the free practice guide",
@@ -117,8 +117,8 @@
         "slug": "first-steps",
         "audience": "For beginners and their parents",
         "title": "The Practice Code: First Steps",
-        "text": "The first habits of good practice, made simple. A short, friendly start for new players and the parents helping them.",
-        "short": "The first habits of good practice, made simple.",
+        "text": "The first good habits, without the jargon. For new players, and for the parents sitting next to them wondering how to help.",
+        "short": "The first good habits, for new players and their parents.",
         "price_label": "Starter ebook",
         "price": null,
         "cta": "Explore First Steps",
@@ -128,8 +128,8 @@
         "slug": "book",
         "audience": "For students ready for the full method",
         "title": "The Practice Code",
-        "text": "All seven elements in one book, with worksheets and a plan for adding one at a time. Move up from First Steps whenever you like.",
-        "short": "The full method: seven elements that turn practice into progress.",
+        "text": "All seven elements, with worksheets and the stories of students like James, who nearly gave up the trumpet. Move up from First Steps whenever you like.",
+        "short": "The whole method: seven elements, and the students who needed them.",
         "price_label": "Ebook",
         "price": null,
         "cta": "Explore the Book",
@@ -139,8 +139,8 @@
         "slug": "academy",
         "audience": "For musicians who want to go further",
         "title": "The Practice Code Academy",
-        "text": "The online course. Watch every element demonstrated at the instrument, then go deeper into memorization, sight-reading and performing.",
-        "short": "The online course: see the method in action, then take it further.",
+        "text": "Watch me teach every element at the instrument, then go further: scales, sight-reading, memorizing and playing for an audience.",
+        "short": "Watch it done at the instrument, then go further.",
         "price_label": "Enrolment",
         "price": "Opening soon",
         "cta": "Explore the Academy",
@@ -153,15 +153,15 @@
     "steps": [
       {
         "title": "Start Where You Are",
-        "text": "New to your instrument? Begin with First Steps. Already playing? Go straight to The Practice Code. The free guide gets you going today."
+        "text": "New to your instrument? Begin with First Steps. Been playing a while? Go straight to The Practice Code. The free guide gets you going today."
       },
       {
-        "title": "Add One Element at a Time",
-        "text": "Begin with accuracy. Give each element a couple of weeks to become automatic before you add the next."
+        "title": "Add One Thing at a Time",
+        "text": "Don't be the hare. Pick one element, make it a habit, then add the next. In a few months your practice will look completely different."
       },
       {
-        "title": "Move Up When You Are Ready",
-        "text": "From First Steps to the full book, and on to the Academy. Each step builds on the one before."
+        "title": "Hear the Difference",
+        "text": "Your pieces hold together in the lesson, because that is how you practiced them. No more “but I could play it at home”."
       }
     ]
   },
@@ -175,7 +175,7 @@
         "tab": "First Steps",
         "title": "The Practice Code: First Steps",
         "meta": "For beginners and their parents",
-        "text": "Get it right first, aim for a target instead of a time, and hang practice on something that already happens every day. The first habits, without the jargon.",
+        "text": "Am I talented enough? (Yes.) How long should I practice? (Wrong question.) The first habits that make practice work, written for beginners and the parents helping them.",
         "cta": "See First Steps",
         "href": "/first-steps.html",
         "art": "starter"
@@ -185,7 +185,7 @@
         "tab": "The Book",
         "title": "The Practice Code",
         "meta": "Seven elements · any instrument · any level",
-        "text": "Accuracy, targets, segmentation, listening, environment, review and performance. Each element gets a clear explanation, the reason it works and exactly how to use it.",
+        "text": "Get it right first. Aim at a target, not the clock. Take small steps, slowly. Each element comes with the reason it works and a student who needed it.",
         "cta": "See the Book",
         "href": "/the-practice-code.html",
         "art": "book"
@@ -195,7 +195,7 @@
         "tab": "Academy",
         "title": "The Practice Code Academy",
         "meta": "Online course · opening soon",
-        "text": "Every element shown at the instrument, followed by deeper modules on memorization, sight-reading and playing under pressure.",
+        "text": "Every element taught at the instrument, then the things students ask me about most: scales, sight-reading, memorizing and nerves.",
         "cta": "See the Academy",
         "href": "/academy.html",
         "art": "course"
@@ -205,7 +205,7 @@
         "tab": "Free Guide",
         "title": "How to Practice Music: 5 Habits You Need to Develop Now",
         "meta": "A free PDF guide",
-        "text": "Not ready for the full method? Start with five habits you can use in your very next practice session.",
+        "text": "Not sure where to begin? Start here: five habits you can use in your very next practice session.",
         "cta": "Get the Free Guide",
         "href": "/how-to-practice.html",
         "art": "guide"
@@ -215,7 +215,7 @@
         "tab": "Practice Tips",
         "title": "Practice Tips for Every Part of Your Playing",
         "meta": "Scales · performing · planning · tools",
-        "text": "Years of articles on learning scales, beating performance nerves, using a metronome, setting goals and helping children practice.",
+        "text": "Years of articles from the practice room: learning scales, using a metronome, taming nerves, setting goals and helping children practice without the daily argument.",
         "cta": "Browse the Practice Tips",
         "href": "/music-practice-blog.html",
         "art": "library"
@@ -225,7 +225,7 @@
         "tab": "Teachers",
         "title": "The Practice Code for Teachers",
         "meta": "For private teachers, studios and schools",
-        "text": "You see each student for half an hour a week. Give them a method for the rest of it, with worksheets and lesson notes you can copy.",
+        "text": "You have probably told your students all of this a thousand times. Sometimes it helps to hear it from somebody who isn't their teacher.",
         "cta": "See the Teacher Path",
         "href": "/teachers.html",
         "art": "teachers"
@@ -233,9 +233,9 @@
       {
         "tag": "Your Guide",
         "tab": "Meet Simon",
-        "title": "Written by a Teacher Who Struggled With Practice Too",
+        "title": "A Teacher Who Watched the Clock Too",
         "meta": "Simon Horsey · teacher and author",
-        "text": "Simon developed The Practice Code over more than 20 years of teaching. As a student he knew the feeling of a piece falling apart in the lesson. This is the method he wishes he had been given.",
+        "text": "As a boy I did my 30 minutes a day, watching the clock and waiting to go out and play. I reached Grade 8 that way, and I know now how much faster it could have been. This is what I wish someone had told me.",
         "cta": "Meet Your Guide",
         "href": "/simon-horsey.html",
         "art": "guideperson"
@@ -245,7 +245,7 @@
   "lead_magnet": {
     "eyebrow": "Free Download",
     "heading": "Five Practice Habits to Develop Now. A Free Guide.",
-    "text": "Work smarter, not harder. Get five habits that make the practice time you already have count for more, and start tonight.",
+    "text": "Not sure where to begin? Start here. Five habits that make the time you already spend practicing count for more. Yours free.",
     "button": "Send Me the Guide",
     "guide_title": "How to Practice Music",
     "guide_subtitle": "5 habits you need to develop now"
@@ -274,11 +274,11 @@
   },
   "closing": {
     "eyebrow": "Your Next Step",
-    "heading": "Stop Counting Minutes. Start Hitting Targets.",
-    "text": "Pick the path that fits you and start practicing in a way you can hear."
+    "heading": "Practice, Don't Play.",
+    "text": "It is the lesson most students never learn. Pick your path and I'll show you how."
   },
   "guide": {
-    "lead": "I'm Simon Horsey. I have spent more than 20 years teaching music and working out why some students fly while others, who practice just as long, stand still.",
+    "lead": "I'm Simon Horsey. As a boy I did my 30 minutes a day, watching the clock, and reached Grade 8 the slow way. After more than 20 years of teaching, I wrote down everything I wish I had known.",
     "credentials": [
       "More than 20 years of teaching music",
       "Head of Arts and Technology at a British international school",
@@ -296,12 +296,12 @@
       "description": "The Practice Code: First Steps is the starter book for beginners and their parents: the first habits of good music practice, made simple.",
       "audience": "For beginners and their parents",
       "heading": "Start Practicing the Right Way From the Very First Week",
-      "lead": "The first months decide whether practice becomes a habit or a daily argument. First Steps gives beginners, and the parents helping them, a few simple habits that make every session count.",
+      "lead": "Am I talented enough? How long should I practice? Why does it go wrong in the lesson? First Steps answers the questions every beginner asks, and gives parents something better to say than “go and do your practice”.",
       "cta_buy": "Buy First Steps",
       "cta_wait": "Register Your Interest",
       "stakes": {
-        "heading": "Beginners Are Told to Practice. Few Are Shown How.",
-        "text": "So they play the piece through, mistakes and all, until the timer goes. Progress slows and practice turns into a chore.",
+        "heading": "Beginners Are Told to Practice. Nobody Tells Them How.",
+        "text": "I did my 30 minutes a day as a boy: sit at the piano, play through my pieces, watch the clock. It works, slowly. There is a much better way to start.",
         "items": [
           "Playing the whole piece through, mistakes and all",
           "Watching the clock until the 20 minutes are up",
@@ -311,36 +311,36 @@
       },
       "offer": {
         "heading": "The First Habits, Made Simple",
-        "needs_review": "Draft outline. This edition is not written yet: confirm what goes in it.",
+        "needs_review": "Draft outline, built from Section 1 of the original Practice Makes Perfect plus its notes for parents. Confirm what goes in.",
         "items": [
           {
+            "title": "Yes, You Are Talented Enough",
+            "text": "Tenacity, not talent. Even Mozart had a father who made him practice."
+          },
+          {
             "title": "Get It Right First",
-            "text": "Play slowly enough to play it correctly. Then play it right five more times."
+            "text": "Slowly enough to play it correctly. Then five more times, so your brain keeps the right version."
           },
           {
-            "title": "Aim for a Target, Not a Time",
-            "text": "\"Play bars 1 to 4 perfectly\" beats \"practice for 20 minutes\" every time."
+            "title": "Bust the 30-Minute Myth",
+            "text": "It isn't how long you practice. It is whether you hit your target."
           },
           {
-            "title": "Practice After, Not At",
-            "text": "Hang practice on something that already happens, like getting home from school."
+            "title": "Practice by Event",
+            "text": "After school, after football, after breakfast. Hang practice on something that already happens, the way James did."
           },
           {
-            "title": "Look Back Before You Move On",
-            "text": "Start each session with yesterday's work, so it is still there tomorrow."
-          },
-          {
-            "title": "Make It a Game",
-            "text": "Simple practice games that reward getting it right, not getting it done."
+            "title": "Get Your Shoes On",
+            "text": "The hardest part is starting. Open the case, sit down, play one note. The rest follows."
           },
           {
             "title": "For Parents",
-            "text": "How to help when you don't play yourself, and what to say instead of \"go and practice\"."
+            "text": "How to help when you don't play yourself. Start with “let's go and play the piano”."
           }
         ],
         "includes": [
-          "A one-week practice check to see where you are starting from",
-          "Simple target sheets to fill in with your teacher",
+          "The Accuracy Health Check, to see where you are starting from",
+          "A practice-by-event planner that fits around a real family week",
           "Notes for parents who don't play an instrument",
           "The price of First Steps taken off The Practice Code when you move up"
         ],
@@ -384,86 +384,91 @@
       "page_title": "The Practice Code: The Book",
       "description": "The Practice Code by Simon Horsey: seven elements that turn practice into progress on any musical instrument, at any level.",
       "audience": "For students ready for the full method",
-      "heading": "The Practice Code: Seven Elements That Turn Practice Into Progress",
-      "lead": "Your lesson is not where you learn the most each week. Your practice is. The Practice Code shows you exactly what to do with that time, on any instrument, at any level.",
+      "heading": "The Practice Code: Everything Nobody Told You About How to Practice",
+      "lead": "Your lesson isn't where you learn the most each week. Your practice is: about 100 minutes of it, against 30 with your teacher. This book is about making those minutes count, whatever you play.",
       "show_price": true,
       "cta_buy": "Buy the Book",
       "cta_wait": "Register Your Interest",
       "stakes": {
-        "heading": "More Practice Is Not the Answer",
-        "text": "The 30-minute rule teaches you to watch the clock. Meanwhile your brain learns whatever you repeat, mistakes included.",
+        "heading": "“But I Could Play It at Home!”",
+        "text": "I believe you. It happens because your brain learns whatever you repeat, wrong notes included. More hours won't fix that. Better practice will.",
         "items": [
-          "Practicing by the clock instead of to a target",
-          "Repeating a mistake until it becomes a habit",
-          "Pieces that work at home and fall apart in the lesson",
-          "Learned it yesterday, can't play it today",
-          "Leaving dynamics and expression until \"later\""
+          "Playing the piece through from the top, again and again",
+          "Watching the clock until the 30 minutes are up",
+          "Getting it right five times out of ten and calling it learned",
+          "Learning it on Tuesday and losing it by Friday",
+          "Saving the dynamics for “later”"
         ]
       },
       "offer": {
-        "heading": "Seven Elements. One Method.",
+        "heading": "Seven Elements. No Jargon.",
         "items": [
           {
-            "title": "The Accuracy Protocol",
-            "text": "Right from the first note. Slow enough to be 100% correct, then five more times to lock it in."
+            "title": "100% Accuracy",
+            "text": "Give your brain the right pattern every time. Get it right five times out of ten and you might as well have been watching TV."
           },
           {
-            "title": "Target-Oriented Systems",
-            "text": "Swap \"practice for 30 minutes\" for clear targets you can tick off. Stop when you hit them."
+            "title": "Targets, Not Time",
+            "text": "Ready, aim, fire. Tell your brain where you want to go and stop when you get there, whether that takes ten minutes or forty."
           },
           {
-            "title": "Strategic Segmentation",
-            "text": "Break music into small, overlapping sections so the joins never trip you up."
+            "title": "Small Steps Slowly",
+            "text": "Divide your work into small sections. Twice. Then start with the bars you can't play, not the ones you can."
           },
           {
-            "title": "Active Listening",
-            "text": "Train your ear while you play: tone, attack, intonation, and what a recording really tells you."
+            "title": "Listen",
+            "text": "Put an empty chair across the room and imagine sitting in it. What does your playing sound like from there?"
           },
           {
-            "title": "Environment and Mindset",
-            "text": "Set up your space and your thinking so nothing gets between you and the work."
+            "title": "Set the Scene",
+            "text": "Pencil, metronome, water, phone somewhere else. Sort it out first, so “I'll just fetch a pencil” doesn't eat the session."
           },
           {
-            "title": "Systematic Review",
-            "text": "Review at the right intervals, so what you learn this week is still there next month."
+            "title": "Review, Review, Review",
+            "text": "Music's three Rs. One slow play-through at the start and end of each session keeps this week's work for next month."
           },
           {
-            "title": "Performance Integration",
-            "text": "Practice what you will perform: expression, tempo and pressure, built in from the start."
+            "title": "Practice What You'll Perform",
+            "text": "Notes without light and shade aren't finished. Dynamics and phrasing go in from the start, not the week before the concert."
           }
         ],
         "includes": [
-          "The Accuracy Health Check: measure how effective your practice is in one week",
-          "Goal-setting worksheets (Why/What/How and WOOP)",
-          "Practice session planning templates",
-          "Lesson notes and target-setting forms",
-          "Practice games, including Target Dice and Practice Chess",
-          "Notes for parents on supporting practice at home"
+          "The Accuracy Health Check: one week that shows why pieces fall apart in lessons",
+          "Goal-setting sheets, with Jane's worked example",
+          "A practice-by-event planner, so practice fits around your real week",
+          "Lesson notes and weekly targets to fill in with your teacher",
+          "Practice games, including the dice game and practice chess",
+          "Notes for parents"
         ],
-        "includes_review": "Taken from draft V3.2 of the book. Confirm the final contents, length and format."
+        "includes_review": "Drawn from the original Practice Makes Perfect and draft V3.2 of The Practice Code. Confirm the final contents, length and format.",
+        "needs_review": "The element names below are suggestions in the voice of the original Practice Makes Perfect. Change them to match the final manuscript."
       },
       "steps": [
         {
           "title": "Take the Accuracy Health Check",
-          "text": "Track one week of practice and see where you are starting from."
+          "text": "Keep a tally for one week. It surprises most people, and it is where the cure starts."
         },
         {
           "title": "Add One Element at a Time",
-          "text": "Give each element a couple of weeks to become automatic before adding the next."
+          "text": "Don't be the hare. One or two new habits a month and your practice is transformed within a few months."
         },
         {
           "title": "Hear the Difference",
-          "text": "Your pieces hold together in lessons and on stage, because that is how you practiced them."
+          "text": "Pieces hold together in your lesson and on stage, because that is how you practiced them."
         }
       ],
       "faqs": [
         {
+          "q": "Am I talented enough?",
+          "a": "Yes, yes, YES. Talent is not the issue. Tenacity, not talent, is what gets people there, and this book shows you what to be tenacious about."
+        },
+        {
           "q": "Which instruments is it for?",
-          "a": "Any instrument and any style. The method is about how you practice, not what you play."
+          "a": "Any instrument, any style. It is about how you practice, not what you play."
         },
         {
           "q": "What level do I need to be?",
-          "a": "Any level. Beginners build good habits from the start, and advanced players apply the same seven elements to harder music."
+          "a": "Any. Beginners build good habits from the start, and advanced players use the same seven elements on harder music."
         },
         {
           "q": "Should I start with First Steps instead?",
@@ -471,18 +476,18 @@
         },
         {
           "q": "Is this a new edition of Practice Makes Perfect?",
-          "a": "Yes. The Practice Code is the rewritten and renamed successor to Practice Makes Perfect, reorganised around seven elements."
+          "a": "Yes. Same teacher, same ideas, reorganised around seven elements and brought up to date."
         },
         {
           "q": "I'm a parent, not a musician. Will it help?",
-          "a": "Yes. There is a section written for parents on how to support practice at home."
+          "a": "Yes. There is a section just for you, starting with what to say instead of “go and do your practice”."
         },
         {
           "q": "What format is the book?",
           "a": null
         }
       ],
-      "closing": "Stop Counting Minutes. Start Hitting Targets.",
+      "closing": "Stop Watching the Clock. Start Hitting Targets.",
       "product": "The Practice Code",
       "price": null,
       "buy_url": null,
@@ -496,13 +501,13 @@
       "page_title": "The Practice Code Academy",
       "description": "The Practice Code Academy: an online course that shows every element of the method at the instrument, with advanced modules on memorization, sight-reading and performing.",
       "audience": "For musicians who want to go further",
-      "heading": "See Every Element in Action, Then Go Deeper",
-      "lead": "The book gives you the method. The course shows it to you at the instrument, then takes on the hard parts: memorizing, sight-reading and playing under pressure.",
+      "heading": "Watch It Done. Then Do It Yourself.",
+      "lead": "Reading about practice is one thing. Seeing it done at the instrument is another. In the Academy I teach every element on video, then take on the things students ask me about most.",
       "soon": true,
       "cta_wait": "Join the Waiting List",
       "stakes": {
-        "heading": "Knowing the Method Is Not the Same as Using It",
-        "text": "Most people read a good idea, try it for a week and slide back into old habits. Seeing it done, step by step, is what makes it stick.",
+        "heading": "Knowing What to Do Isn't the Same as Doing It",
+        "text": "We have all left a talk full of good intentions, changed for a fortnight and slid back into old habits. I watched it happen after my own practice presentations. The Academy is my answer.",
         "items": [
           "Reading about a technique but never quite applying it",
           "Not being sure you are doing it right",
@@ -512,31 +517,31 @@
       },
       "offer": {
         "heading": "What the Academy Will Cover",
-        "needs_review": "Draft outline, based on the \"next steps\" pages of the book. Confirm the modules before launch.",
+        "needs_review": "Draft outline, based on the later keys and Section 4 of the original Practice Makes Perfect. Confirm the modules before launch.",
         "items": [
           {
             "title": "The Seven Elements on Video",
-            "text": "Watch each element demonstrated, then try it straight away on your own music."
+            "text": "Each one taught at the instrument, so you can see exactly what slow, accurate and targeted look like."
           },
           {
-            "title": "Memorization",
-            "text": "Visual, aural, physical and analytical memory working together, so a piece stays learned."
+            "title": "Scales Without the Groans",
+            "text": "Why to play them, how to learn them, and how to make them the easy part of an exam."
           },
           {
-            "title": "Sight-Reading",
-            "text": "A routine for reading new music fluently instead of note by note."
+            "title": "Sight-Reading and Improvising",
+            "text": "What to look for before you play a note, and how to keep going when it goes wrong."
           },
           {
-            "title": "Performance Psychology",
-            "text": "Rehearse the pressure as well as the notes, and walk on stage prepared."
+            "title": "Memorizing",
+            "text": "Seeing it, hearing it, feeling it and understanding it, so a piece stays learned."
           },
           {
-            "title": "Technique Systems",
-            "text": "Scales, studies and exercises organised so they improve your pieces."
+            "title": "Exams, Competitions and Concerts",
+            "text": "Choosing pieces, preparing properly and practicing with a little pressure on."
           },
           {
-            "title": "Technology for Practice",
-            "text": "Recording, slowing down and tracking tools that earn their place."
+            "title": "Games and Challenges",
+            "text": "The dice game, practice chess and other ways to make getting it right fun."
           }
         ],
         "includes": [
@@ -574,7 +579,7 @@
           "a": null
         }
       ],
-      "closing": "Don't Just Read the Code. Use It.",
+      "closing": "Don't Just Read About It. Do It.",
       "product": "The Practice Code Academy",
       "price": null,
       "buy_url": null
@@ -583,18 +588,18 @@
       "page_title": "The Practice Code for Teachers and Studios",
       "description": "Give every student one clear method for practicing between lessons. A studio licence for The Practice Code, with worksheets and lesson notes you can copy.",
       "audience": "For teachers and studios",
-      "heading": "Teach Your Students How to Practice, Not Just What to Practice",
-      "lead": "You see each student for half an hour a week. What happens on the other six days decides their progress. Give every student the same clear method.",
+      "heading": "You Have Told Them a Thousand Times. Let the Book Tell Them.",
+      "lead": "You know all of this already. But sometimes it helps to hear it from somebody who isn't your teacher. Give your students The Practice Code and spend your lesson time teaching music.",
       "cta_wait": "Talk to Me About Your Studio",
       "cta_href": "/contact.html",
       "stakes": {
         "heading": "The Lesson Is the Smallest Part of the Week",
-        "text": "A 30-minute lesson against 100 minutes of practice at home means most of the learning happens when you are not in the room.",
+        "text": "Thirty minutes with you, a hundred on their own. What they do in those hundred minutes decides how next week's lesson goes.",
         "items": [
           "Students who arrive having practiced the mistakes in",
-          "\"But I could play it at home\"",
-          "Parents who want to help and don't know how",
-          "Lesson notes that never get read"
+          "“But I could play it at home!”",
+          "Writing the same lesson note week after week after week",
+          "Parents who want to help and don't know how"
         ]
       },
       "offer": {
@@ -610,8 +615,8 @@
             "text": "The Accuracy Health Check, target sheets and practice planners, free to reproduce for your studio."
           },
           {
-            "title": "The Lesson Notes System",
-            "text": "A two-page format: where the student is now, and clear targets for the week ahead."
+            "title": "Lesson Notes That Get Read",
+            "text": "Two pages: notes on today's playing on the left, clear targets for the week on the right. Nothing gets lost in the mix."
           }
         ]
       },
@@ -643,7 +648,7 @@
           "a": "Not yet. A teacher certification through The Practice Code Academy is planned. Get in touch if you would like to hear when it opens."
         }
       ],
-      "closing": "Bring The Practice Code to Your Studio",
+      "closing": "Get Your Students to Read It. I Wrote It for Them.",
       "product": "The Practice Code for Teachers"
     }
   },
@@ -802,8 +807,8 @@
   },
   "teachers_band": {
     "eyebrow": "For Teachers and Studios",
-    "heading": "Teach the Method to Every Student You See",
-    "text": "You see each student for half an hour a week. Give them a method for the other six days.",
+    "heading": "Teachers: You Have Told Them a Thousand Times",
+    "text": "You know all of this already. My own students would say, “That's Mr. Horsey going on about practice again.” Sometimes it helps to hear it from somebody who isn't your teacher.",
     "points": [
       "A studio licence to share the books with your students",
       "Worksheets you can copy freely",
