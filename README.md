@@ -16,6 +16,12 @@ Articles and simple pages are one file each in **`content/`**.
 While `"draft": true` is set, anything still waiting on you shows a red "Draft" tag and search
 engines are told not to index the site. Fill a `null` in and its tag goes. Set `"draft": false` to launch.
 
+## Themes
+
+`"theme"` in `site.json` is `"navy"` (the look shared with LearningForSuccess) or `"violet"` (the Essentials For Music
+brand guide: violet, buff, green, Source Sans 3). While the site is in draft, a Theme switch at the bottom right of every
+page flips between them, and adding `?theme=violet` to any address does the same.
+
 ## Run it
 
 ```bash

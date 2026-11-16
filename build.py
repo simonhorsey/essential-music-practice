@@ -24,6 +24,32 @@ URL = SITE['url'].rstrip('/')
 DRAFT = bool(SITE.get('draft'))
 YEAR = datetime.date.today().year
 ARROW = ' <span class="arrow" aria-hidden="true">→</span>'
+THEMES = ('navy', 'violet')
+THEME = SITE.get('theme', 'navy') if SITE.get('theme', 'navy') in THEMES else 'navy'
+
+# Artwork is drawn in the navy palette; these swap its colours for the theme's CSS variables.
+SVG_VARS = {'#0d1b2a': '--ink', '#14273d': '--ink-2', '#1e3653': '--ink-3', '#ffb703': '--accent', '#1f8a7d': '--art-2',
+            '#1f8a7e': '--chip', '#f6f1e7': '--on-ink', '#a9b6c7': '--on-ink-muted'}
+
+
+def themed(svg):
+    def tag(m):
+        t, styles = m.group(0), []
+
+        def attr(am):
+            if am.group(2).lower() in SVG_VARS:
+                styles.append('%s:var(%s)' % (am.group(1), SVG_VARS[am.group(2).lower()]))
+                return ''
+            return am.group(0)
+        t = re.sub(r'\s(fill|stroke)="(#[0-9a-fA-F]{6})"', attr, t)
+        if ' font-family="' in t:
+            t = re.sub(r'\sfont-family="[^"]*"', '', t)
+            styles.append('font-family:var(--font-body)')
+        if styles:
+            end = '/>' if t.endswith('/>') else '>'
+            t = t[:-len(end)] + ' style="%s"' % ';'.join(styles) + end
+        return t
+    return re.sub(r'<[a-zA-Z][^>]*>', tag, svg)
 
 
 def e(s):
@@ -193,6 +219,10 @@ def art(kind):
             % (grid, ART.get(kind, '')))
 
 
+_art = art
+art = lambda kind: themed(_art(kind))
+
+
 HERO_ART = '''<svg viewBox="0 0 520 460" width="520" height="460">
 <rect x="24" y="36" width="472" height="388" rx="22" fill="#14273d" stroke="#1e3653" stroke-width="2"/>
 <g stroke="#1e3653" stroke-width="1.5"><line x1="64" y1="176" x2="456" y2="176"/><line x1="64" y1="222" x2="456" y2="222"/><line x1="64" y1="268" x2="456" y2="268"/><line x1="64" y1="314" x2="456" y2="314"/><line x1="64" y1="360" x2="456" y2="360"/></g>
@@ -201,9 +231,19 @@ HERO_ART = '''<svg viewBox="0 0 520 460" width="520" height="460">
 <g fill="#f6f1e7"><ellipse cx="84" cy="360" rx="11" ry="8.5"/><ellipse cx="144" cy="329" rx="11" ry="8.5"/><ellipse cx="204" cy="298" rx="11" ry="8.5"/><ellipse cx="264" cy="267" rx="11" ry="8.5"/><ellipse cx="324" cy="236" rx="11" ry="8.5"/><ellipse cx="384" cy="205" rx="11" ry="8.5"/></g>
 <circle cx="444" cy="174" r="15" fill="#ffb703"/><circle cx="444" cy="174" r="26" fill="none" stroke="#ffb703" stroke-width="2" opacity="0.45"/>
 <g font-family="Roboto Variable, Roboto, sans-serif" font-size="14" font-weight="600" fill="#a9b6c7"><text x="84" y="392" text-anchor="middle">Accuracy</text><text x="264" y="392" text-anchor="middle">Listening</text><text x="430" y="392" text-anchor="middle">Performance</text></g>
-<g transform="translate(56 64)"><rect width="190" height="44" rx="22" fill="#1f8a7d"/><path d="M22 22l7 7 13-14" fill="none" stroke="#f6f1e7" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(56 64)"><rect width="190" height="44" rx="22" fill="#1f8a7e"/><path d="M22 22l7 7 13-14" fill="none" stroke="#f6f1e7" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="56" y="28" font-family="Roboto Variable, Roboto, sans-serif" font-size="16" font-weight="700" fill="#f6f1e7">Seven elements</text></g>
 </svg>'''
+
+
+LOGO = themed(LOGO)
+HERO_ART = themed(HERO_ART)
+
+# Draft only: lets you flip between themes on any page. Remembers the choice in the browser.
+THEME_BOOT = ('<script>(function(){try{var q=new URLSearchParams(location.search).get("theme"),t=q||localStorage.getItem("emp-theme");'
+              'if(t==="navy"||t==="violet"){document.documentElement.setAttribute("data-theme",t);if(q)localStorage.setItem("emp-theme",t);}}catch(e){}})();</script>')
+THEME_SWITCH = ('<div class="theme-switch" role="group" aria-label="Preview theme"><span>Theme</span>'
+                + ''.join('<button type="button" data-set-theme="%s">%s</button>' % (t, t.capitalize()) for t in THEMES) + '</div>')
 
 
 # ------------------------------------------------------------------ page bodies
@@ -452,17 +492,16 @@ def build():
             main, title, desc = article(page, pages, fill_body(page)), '%s | %s' % (page['title'], SITE['name']), page['description']
         page['description'] = desc
         robots = '<meta name="robots" content="noindex, nofollow">' if (DRAFT or page['noindex']) else ''
-        doc = ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        doc = ('<!doctype html>\n<html lang="%s" data-theme="%s">\n<head>\n<meta charset="utf-8">%s\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
                '<title>%s</title>\n<meta name="description" content="%s">\n<link rel="canonical" href="%s">\n%s\n'
                '<meta name="theme-color" content="#0d1b2a">\n<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
                '<meta property="og:type" content="website">\n<meta property="og:site_name" content="%s">\n<meta property="og:title" content="%s">\n'
                '<meta property="og:description" content="%s">\n<meta property="og:url" content="%s">\n<meta property="og:image" content="%s/music-practice-fb.png">\n'
                '<link rel="alternate" type="application/rss+xml" title="%s" href="/music-practice.xml">\n'
-               '<link rel="preload" href="/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>\n'
-               '<link rel="stylesheet" href="/css/site.css">\n%s\n</head>\n<body>\n<a class="skip" href="#main">Skip to content</a>\n%s\n'
-               '<main id="main">\n%s\n</main>\n%s\n<script src="/js/site.js" defer></script>\n</body>\n</html>\n'
-               % (e(SITE['locale']), e(title), e(desc), URL + page['path'], robots, e(SITE['name']), e(title), e(desc), URL + page['path'], URL,
-                  e(SITE['name']), json_ld(page), head, main, foot))
+                              '<link rel="stylesheet" href="/css/site.css">\n%s\n</head>\n<body>\n<a class="skip" href="#main">Skip to content</a>\n%s\n'
+               '<main id="main">\n%s\n</main>\n%s\n%s<script src="/js/site.js" defer></script>\n</body>\n</html>\n'
+               % (e(SITE['locale']), THEME, THEME_BOOT if DRAFT else '', e(title), e(desc), URL + page['path'], robots, e(SITE['name']), e(title), e(desc), URL + page['path'], URL,
+                  e(SITE['name']), json_ld(page), head, main, foot, THEME_SWITCH if DRAFT else ''))
         with open(os.path.join(DIST, 'index.html' if page['slug'] == 'index' else page['slug'] + '.html'), 'w', encoding='utf-8') as f:
             f.write(doc)
 

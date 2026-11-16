@@ -1,6 +1,8 @@
 /* Essential Music Practice. Shares its design system with learning-for-success.com. */
 @font-face { font-family: 'Roboto Variable'; font-style: normal; font-display: swap; font-weight: 100 900; src: url(/fonts/roboto-latin-wght-normal.woff2) format('woff2-variations'); }
 @font-face { font-family: 'Roboto Variable'; font-style: italic; font-display: swap; font-weight: 100 900; src: url(/fonts/roboto-latin-wght-italic.woff2) format('woff2-variations'); }
+@font-face { font-family: 'Source Sans 3 Variable'; font-style: normal; font-display: swap; font-weight: 200 900; src: url(/fonts/source-sans-3-latin-wght-normal.woff2) format('woff2-variations'); }
+@font-face { font-family: 'Source Sans 3 Variable'; font-style: italic; font-display: swap; font-weight: 200 900; src: url(/fonts/source-sans-3-latin-wght-italic.woff2) format('woff2-variations'); }
 @font-face { font-family: 'Roboto Slab Variable'; font-style: normal; font-display: swap; font-weight: 100 900; src: url(/fonts/roboto-slab-latin-wght-normal.woff2) format('woff2-variations'); }
 :root {
   --ink: #0d1b2a;
@@ -326,8 +328,8 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.2; }
   .hero { position: relative; padding-top: clamp(48px, 7vw, 96px); overflow: hidden; }
   .hero::before {
     content: ''; position: absolute; inset: 0; pointer-events: none;
-    background: radial-gradient(900px 480px at 82% 12%, rgba(31, 138, 125, 0.28), transparent 62%),
-      radial-gradient(700px 420px at 4% 96%, rgba(255, 183, 3, 0.1), transparent 60%);
+    background: radial-gradient(900px 480px at 82% 12%, var(--glow-1), transparent 62%),
+      radial-gradient(700px 420px at 4% 96%, var(--glow-2), transparent 60%);
   }
   .hero > .wrap { position: relative; }
   .hero__grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(24px, 5vw, 64px); align-items: center; }
@@ -487,3 +489,36 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.2; }
 .edition-note { margin-top: 1.25rem; font-size: 0.9375rem; color: var(--on-ink-muted); }
 .edition-note a { color: var(--accent); font-weight: 700; }
 .notice { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.25rem; }
+
+/* ---- themes ----
+   "navy" is the look shared with learning-for-success.com (the defaults in :root above).
+   "violet" uses the Essentials For Music brand guide: Dull Violet, Cinnamon Buff, Livery Green,
+   Briquette Grey and Source Sans 3. Buff and green are only ever fills, never text on white.
+   Pick the live theme with "theme" in site.json. */
+:root { --art-2: #1f8a7d; --chip: #1f8a7d; --glow-1: rgba(31, 138, 125, 0.28); --glow-2: rgba(255, 183, 3, 0.1); }
+[data-theme='violet'] {
+  --ink: #27112f; --ink-2: #34193f; --ink-3: #4b2759;
+  --paper: #fdfbfe; --paper-2: #f4eef7; --line: #e6dcec;
+  --text: #2f2932; --muted: #5f5766;
+  --on-ink: #faf5fc; --on-ink-muted: #c6abd0;
+  --accent: #fcbf71; --accent-deep: #f6a94b; --accent-ink: #27112f;
+  --teal: #7a3b92; --teal-soft: #e4f1d3;
+  --art-2: #a8d179; --chip: #7a3b92;
+  --glow-1: rgba(122, 59, 146, 0.55); --glow-2: rgba(252, 191, 113, 0.12);
+  --font-display: 'Source Sans 3 Variable', 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Source Sans 3 Variable', 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --shadow: 0 1px 2px rgba(39, 17, 47, 0.06), 0 12px 32px -12px rgba(39, 17, 47, 0.2);
+}
+[data-theme='violet'] body { font-size: 1.125rem; }
+[data-theme='violet'] h1, [data-theme='violet'] h2, [data-theme='violet'] h3, [data-theme='violet'] h4 { font-weight: 650; letter-spacing: -0.02em; }
+[data-theme='violet'] .ticks:not(.crosses) li::before {
+  background: var(--teal-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.6 2.6L12 5.6' fill='none' stroke='%234f7a26' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 80% no-repeat;
+}
+
+/* draft-only switch for comparing the two themes */
+.theme-switch { position: fixed; right: 14px; bottom: 14px; z-index: 60; display: flex; align-items: center; gap: 4px; padding: 5px 6px 5px 12px;
+  background: #fff; color: #1a2330; border: 1px solid #cfc8d6; border-radius: 999px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  font: 600 0.8125rem/1 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.theme-switch span { margin-right: 4px; }
+.theme-switch button { font: inherit; min-height: 34px; padding: 0 12px; border: 0; border-radius: 999px; background: transparent; color: inherit; cursor: pointer; }
+.theme-switch button[aria-pressed='true'] { background: #1a2330; color: #fff; }

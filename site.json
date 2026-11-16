@@ -1,6 +1,8 @@
 {
   "_readme": "All settings and sales copy live here. While draft is true, anything still waiting on you shows a red Draft tag and search engines are told not to index the site. Fill a null in and its tag goes. Set draft to false to launch.",
   "draft": true,
+  "theme": "navy",
+  "_theme_note": "\"navy\" matches learning-for-success.com. \"violet\" uses the Essentials For Music brand guide. While draft is true, a Theme switch at the bottom right of every page lets you compare.",
   "name": "Essential Music Practice",
   "url": "https://www.essential-music-practice.com",
   "author": "Simon Horsey",

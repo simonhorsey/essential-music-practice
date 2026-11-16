@@ -55,3 +55,23 @@
     root.querySelector('[data-next]').addEventListener('click', function () { show(index + 1); });
     show(0);
   })();
+
+/* Draft-only theme switch */
+(function () {
+  var box = document.querySelector('.theme-switch');
+  if (!box) return;
+  var buttons = box.querySelectorAll('[data-set-theme]');
+  function mark() {
+    var now = document.documentElement.getAttribute('data-theme');
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-set-theme') === now)); });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.getAttribute('data-set-theme');
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('emp-theme', t); } catch (e) {}
+      mark();
+    });
+  });
+  mark();
+})();
