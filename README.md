@@ -31,9 +31,13 @@ Same setup as LearningForSuccess: a Worker serving static files (`wrangler.jsonc
 1. Push this folder to a GitHub repository.
 2. Cloudflare dashboard → Workers & Pages → Create application → GitHub → pick the repository.
 3. Project name `essentialmusicpractice`. Build command `python3 build.py`. Deploy command `npx wrangler deploy`.
-4. On the first deploy, check that the home page loads at `/` and that an old address such as
-   `/scales-practice.html` loads without redirecting. `html_handling` is set to `none` to keep the old
-   `.html` addresses; if the home page does not load, delete that line from `wrangler.jsonc`.
+4. Every push to `main` rebuilds the site.
+
+Preview address: https://essentialmusicpractice.simonhorsey.workers.dev
+
+`html_handling` is set to `none` in `wrangler.jsonc` so the old `.html` addresses keep working unchanged.
+In that mode Cloudflare does not serve `index.html` at `/` by itself, so `build.py` writes a
+`/ /index.html 200` line at the top of `_redirects`. Leave both in place.
 
 ## Where things are
 
