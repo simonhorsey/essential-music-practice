@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Music Practice App</title><meta name="description" content="This is the page for support with the iOS Music Practice App. Use the app to plan your practice each week and use your iPhone or iPod touch to make your music practice more effective. "><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/sd/support-files/style.css" rel="stylesheet" type="text/css">
+<!-- start: tool_blocks.sbi_html_head -->
+    
+<link rel="canonical" href="https://www.essential-music-practice.com/music-practice-app.html" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.essential-music-practice.com/music-practice.xml">
+<meta property="og:site_name" content="Essential Music Practice" />
+<meta property="og:title" content="Music Practice App" />
+<meta property="og:description" content="This is the page for support with the iOS Music Practice App. Use the app to plan your practice each week and use your iPhone or iPod touch to make your music practice more effective. " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.essential-music-practice.com/music-practice-app.html" />
+<meta property="og:image" content="https://www.essential-music-practice.com/music-practice-fb.png" />
+<meta property="fb:app_id" content="232556283458134" />
+<meta property="fb:admins" content="simonhorsey," />
+
+<!-- SD -->
+
+
+
+    
+    
+    <script type="text/javascript" language="JavaScript">
+        //browser detection
+    function Is() 
+    {
+       var agent = navigator.userAgent.toLowerCase();
+       this.major = parseInt(navigator.appVersion);
+       this.minor = parseFloat(navigator.appVersion);
+
+       this.mac = /Mac68K|MacPPC|MacIntel/i.test(navigator.platform);
+       this.safari = (/Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor));
+       this.firefox = typeof InstallTrigger !== 'undefined';
+
+       this.ns = ((agent.indexOf('mozilla') != -1) && 	
+        (agent.indexOf('spoofer') == -1) && 
+        (agent.indexOf('compatible') == -1) && 
+        (agent.indexOf('opera') == -1) && 
+        (agent.indexOf('webtv') == -1));
+    
+       this.ns2 = (this.ns && (this.major == 2));
+       this.ns3 = (this.ns && (this.major == 3));
+       this.ns4 = (this.ns && (this.major == 4));
+       this.ns6 = (this.ns && (this.major >= 5));
+       this.ie = (agent.indexOf("msie") != -1);
+       this.ie3 = (this.ie && (this.major < 4));
+       this.ie4 = (this.ie && (this.major == 4));
+       if(this.ie4 && (agent.indexOf("msie 5.0") != -1))
+       {
+          this.ie4=false;
+          this.ie5=true;
+       }
+    
+       this.ieX = (this.ie && !this.ie3 && !this.ie4);
+    }
+    
+    var is = new Is();
+    
+    //Write text on top of a layer
+    function WriteLayer(id,text) 
+    {
+       var DOM = (document.getElementById) ? true:false;	
+       var divID;
+    
+       if (is.ns4) divID = document.layers[id];
+       else if (is.ie4) divID = document.all[id];
+       else if (DOM) divID = document.getElementById(id);
+    
+       if (is.ns4) 
+       {
+          divID.document.open();
+          divID.document.write(text);
+          divID.document.close();
+       }
+       else if (DOM ||is.ie4) 
+       {
+          divID.innerHTML = text;						
+       }
+    }
+    
+    function SetLayerVisibility(id,visibility)
+    {
+       if (is.ieX||is.ns6)
+       {
+            this.obj = document.getElementById(id).style;
+            this.obj.visibility = visibility;
+       }
+       else if(is.ie4)
+       {
+            this.obj = document.all[id].style;
+            this.obj.visibility = visibility;
+       }
+       else if(is.ns4)
+       {
+            this.obj = document.layers[id];
+            return this.obj;
+       }
+    }
+    
+    function SubmitData(code)
+    {
+       var flag;
+    
+       flag = eval('isReady_' + code + '()');
+    
+       if (!flag)
+       {
+        return false;
+       }   
+       eval('document._' + code + '.target="_self";');
+       eval('document._' + code + '.submit();');
+    }
+    
+    var eMai;
+    
+    function trim(s)
+    {
+       while (s.substring(0,1) == ' ')
+       {
+          s = s.substring(1,s.length);
+       }
+       while (s.substring(s.length-1,s.length) == ' ')
+       {
+          s = s.substring(0,s.length-1);
+       }
+       return s;
+    }
+    
+    function CheckEmail(eMai)
+    {
+        var h;
+        eMai=trim(eMai);
+        var ok = "1234567890abcdefghijklmnopqrstuvwxyz[].\@-_ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for(h=0; h < eMai.length; h++)
+        {
+            if(ok.indexOf(eMai.charAt(h))<0)
+            {
+                return (false);
+            }
+        }
+        var re = /(@.*@)|(\.\.)|(^\.)|(^@)|(@$)|(\.$)|(@\.)/;
+        var re_two = /^.+\@(\[?)[a-zA-Z0-9\-\.]+\.([a-zA-Z]{2,4}|[0-9]{1,4})(\]?)$/;
+        if (!eMai.match(re) && eMai.match(re_two))
+        {
+            return -1;
+        }
+    }</script><script type="text/javascript" language="JavaScript">var https_page =0</script>
+
+
+    <script src="https://www.essential-music-practice.com/sd/support-files/eucookie.js" async defer type="text/javascript"></script><!-- end: tool_blocks.sbi_html_head -->
+<!-- start: shared_blocks.30025640#end-of-head -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1720928640349300",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="b52f41dd9d1c0a235d88a19c500bbb02296893160ffa1d84aafb8a02b509b7c7" async="async"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25936703-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53aef0b06d441b9c"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4736275.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '423448645284095');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=423448645284095&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- end: shared_blocks.30025640#end-of-head -->
+    
+    <script type="text/javascript">
+        var FIX = FIX || {};    </script>
+    
+</head>
+<body class="responsive">
+
+    <div id="PageWrapper" class="modern">
+
+      <div id="HeaderWrapper">
+        <div id="Header">
+          <div class="Liner">
+            <div class="WebsiteName">
+              <a href="/">Essential-Music-Practice.com</a>
+            </div><div class="Tagline">Crack The Practice Code</div>
+<!-- start: shared_blocks.30025610#top-of-header -->
+
+<!-- start: tool_blocks.navbar.horizontal.left --><div class="ResponsiveNavWrapper"> 
+ 	      <div class="ResponsiveNavButton"><span>Menu</span></div><div class="HorizontalNavBarLeft HorizontalNavBar HorizontalNavBarCSS ResponsiveNav"><ul class="root"><li class="li1"><a href="/">Home</a></li><li class="li1 submenu"><span class="navheader">Students</span><ul><li class="li2"><a href="/efficient-practice.html">Efficient Practice</a></li><li class="li2"><a href="/music-practice-games.html">Music Practice Games</a></li><li class="li2"><a href="/scales-practice.html">Scales</a></li><li class="li2"><a href="/music-practice-books.html">Practice Books</a></li><li class="li2"><a href="/performance-anxiety.html">Performance</a></li><li class="li2"><a href="http://learn.essential-music-practice.com">Hack Your Practice</a></li></ul></li><li class="li1 submenu"><span class="navheader">Practice Tools</span><ul><li class="li2"><a href="/metronome.html">Metronomes</a></li><li class="li2"><a href="/music-practice-software.html">Software</a></li><li class="li2"><a href="/digital-audio-recorder.html">Recording</a></li><li class="li2"><a href="/music-practice-charts.html">Downloads</a></li><li class="li2"><a href="/transcribe-music.html">Transcribe Music</a></li></ul></li><li class="li1 submenu"><span class="navheader">Music Books</span><ul><li class="li2"><a href="/practice-makes-perfect.html">Practice eBook</a></li><li class="li2"><a href="/lesson-notes.html">Lesson Notes</a></li><li class="li2"><a href="/sheet-music.html">Sheet Music</a></li><li class="li2"><a href="/quotes-about-music.html">Music Quotes</a></li></ul></li><li class="li1"><a href="/kids-and-practice.html">Parents</a></li></ul></div></div>
+    <!-- end: tool_blocks.navbar.horizontal.left -->
+
+<!-- end: shared_blocks.30025610#top-of-header -->
+<!-- start: shared_blocks.30025551#bottom-of-header -->
+
+
+<!-- end: shared_blocks.30025551#bottom-of-header -->
+</div><!-- end Liner -->
+        </div><!-- end Header -->
+      </div><!-- end HeaderWrapper -->
+
+      <div id="ContentWrapper">
+        <div id="ContentColumn">
+          <div class="Liner">
+<!-- start: shared_blocks.30025516#above-h1 -->
+
+
+<!-- end: shared_blocks.30025516#above-h1 -->
+<p><span style="color: rgb(250, 5, 5);"><b>I HAVE CURRENTLY WITHDRAWN THE MUSIC PRACTICE APP FROM THE APP STORE AS IT ISN'T COMPATIBLE WITH IOS11 AND WOULD TAKE TOO MUCH TIME (AND MONEY!) TO UPGRADE AT THIS POINT&gt; I AM HOWEVER WORKING ON A NEW, IMPROVED, EVEN BETTER APP WITH LOTS OF FEATURES FOR STUDENTS AND TEACHERS. JUST ADD YOUR NAME BELOW AND I'LL LET YOU KNOW WHEN IT'S AVAILABLE</b></span></p>
+<h1>iOS Music Practice App<br/>for iPhone and iPod Touch</h1>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/my-practice-done.png" width="224" height="322" alt="music practice app practice completed" title="music practice app practice completed" data-pin-media="https://www.essential-music-practice.com/images/my-practice-done.png" style="width: 224px; height: auto"></a><div class="pinit">
+                <a data-pin-do="buttonPin" data-pin-count="beside" data-pin-save="true" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.essential-music-practice.com%2Fmusic-practice-app.html&media=https%3A%2F%2Fwww.essential-music-practice.com%2Fimages%2Fmy-practice-done.png&description=Music%20practice%20completed%20screen%20from%20the%20iOS%20MUsic%20Practice%20App"></a>
+            </div></div>
+<p>Read on to find out how to use the Music Practice App. If you are having a particular problem with the operation of the App, or you would like to suggest a new feature or enhancement please use the&#xa0;<a href="https://www.essential-music-practice.com/music-practice-app.html#music practice support form" onclick="return FIX.track(this);">support form</a>&#xa0;at the bottom of this page. We are already working on some exciting enhancements for Version 2 so let us know if there is anything you would like to see added and we will see what we can do!</p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<!-- start: shared_blocks.30025670#below-h1 -->
+
+
+<!-- end: shared_blocks.30025670#below-h1 -->
+<!-- start: shared_blocks.30025639#below-paragraph-1 -->
+
+<hr style="width:80%;">
+
+<!-- end: shared_blocks.30025639#below-paragraph-1 -->
+<h1><br/>What is&#xa0;<em>Music Practice</em>?</h1>
+<p>Music Practice is an iOS app designed for iPhone and iPod touch, to help you make your music practice more efficient and effective through planning practice, reminding you about practice and keeping you on track with your music practice for each week.</p><p><br/></p>
+<hr style="width:100%;height:1px;margin-left:0px;text-align:left;">
+<h1>Using the Music Practice App</h1>
+<hr style="width:100%;height:1px;margin-left:0px;text-align:left;">
+<h2><br/>Setting up</h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-front-screen.png" width="223" height="322" alt="front-screen-of-music-practice-app" title="front-screen-of-music-practice-app" data-pin-media="https://www.essential-music-practice.com/images/mypractice-front-screen.png" style="width: 223px; height: auto"></a></div>
+<p>When you first open the Music Practice App, go to the Settings screen and set the time of your next lesson and the time you want to be reminded about your music practice each day.<br/></p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<h2><br/>Entering weekly practice targets<br/></h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-mozart-week.png" width="224" height="322" alt="weekly practice targets screen in the music practice app" title="weekly practice targets screen in the music practice app" data-pin-media="https://www.essential-music-practice.com/images/mypractice-mozart-week.png" style="width: 224px; height: auto"></a></div>
+<p><br/>Tap the PLAN button then tap the + button to add a weekly target. Make your&#xa0;<b>weekly practice targets as exact as possible</b>. It is often a good idea to add how many times you will play through a section without mistakes, or the tempo you need to achieve for a particular piece or section before you consider it completed. Remember that getting 100% correct notes is more important than speed, especially in the initial stages of learning a piece.</p><p>Your weekly tasks are generally set by your teacher and you may wish to talk to him/her about your exact weekly targets. You could even fill this screen of the music practice app at the end of the lesson, or your teacher may wish to fill it in during the lesson. If you don't have lessons pick a day each week to plan your targets for the week. Once you get into the habit of doing this you should find you make far more progress in much less time.</p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<h2>Entering daily practice tasks<br/></h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-mozart-tuesday.png" width="224" height="322" alt="iOS Music Practice App daily practice tasks - Tuesday" title="iOS Music Practice App daily practice tasks - Tuesday" data-pin-media="https://www.essential-music-practice.com/images/mypractice-mozart-tuesday.png" style="width: 224px; height: auto"></a></div>
+<div class="ImageBlock ImageBlockRight"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-mozart-wednesday.png" width="224" height="322" alt="iOS Music Practice App daily practice tasks - Wednesday" title="iOS Music Practice App daily practice tasks - Wednesday" data-pin-media="https://www.essential-music-practice.com/images/mypractice-mozart-wednesday.png" style="width: 224px; height: auto"></a></div>
+<p>Once you have set up a weekly target it needs to be split into planned&#xa0;<b>daily practice tasks</b>. These will be the steps you take each day to achieve the target by the end of the week. Having a clear plan to achieve your target over the week makes you far more likely to succeed. Tap the&#xa0;<b>Daily Tasks&#xa0;</b>button on the Weekly Targets page to add your daily practice tasks. Divide your Weekly Targets into tasks to be achieved each day. Again, be as exact as possible including bar numbers, any specific practice techniques you will use to evaluate your practice including any&#xa0;<a href="https://www.essential-music-practice.com/music-practice-games.html" onclick="return FIX.track(this);">music practice games</a>&#xa0;such as the Ladder Game or Cheating Chess. Also give yourself tempo targets if appropriate. Keep these tasks succinct. The quicker and easier it is to enter the information, the more likely you are to use the music practice app each week. We are already looking at ways in which to make the input of practice targets quicker and easier!</p>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-mozart-friday.png" width="224" height="322" alt="iOS Music Practice App daily practice tasks - Friday" title="iOS Music Practice App daily practice tasks - Friday" data-pin-media="https://www.essential-music-practice.com/images/mypractice-mozart-friday.png" style="width: 224px; height: auto"></a></div>
+<div class="ImageBlock ImageBlockRight"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-mozart-saturday.png" width="224" height="322" alt="iOS Music Practice App daily practice tasks - Saturday" title="iOS Music Practice App daily practice tasks - Saturday" data-pin-media="https://www.essential-music-practice.com/images/mypractice-mozart-saturday.png" style="width: 224px; height: auto"></a></div>
+<p><b>N.B.</b><em>There is</em>&#xa0;<i>no practice day included for the day of your lesson</i>. If you&#xa0;<b>practice before your lesson</b>&#xa0;you should&#xa0;<i>play through everything you prepared for your lesson</i>.&#xa0;<b>After your lesson</b>&#xa0;you need to&#xa0;<i>play through everything covered during your lesson to help you plan your practice for the coming week</i>.</p><p><br/></p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<h2>Daily Practice</h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);"><img src="https://www.essential-music-practice.com/images/my-practice-today.png" width="224" height="322" alt="Daily Practice screen in Music Practice app" title="Daily Practice screen in Music Practice app" data-pin-media="https://www.essential-music-practice.com/images/my-practice-today.png" style="width: 224px; height: auto"></a></div>
+<p>The settings allow you to either have the app open at the Home Screen, listing the various functions of the app, or automatically open on your practice for the day. You can always see your practice for today by tapping the Practice button in the bottom left of the screen. At the top of the Daily Practice screen you see a count down to your lesson telling you how many days to go until your next lesson.</p><p>Any&#xa0;<b>incomplete tasks</b>&#xa0;from previous days will be shown under the heading 'Incomplete'. These must be completed before you see tasks for today.</p><p><br/></p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<h2><br/>Checking your progress</h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);"><img src="https://www.essential-music-practice.com/images/my-practice-progress.png" width="224" height="322" alt="Check your progress when practicing using the Music Practice App" title="Check your progress when practicing using the Music Practice App" data-pin-media="https://www.essential-music-practice.com/images/my-practice-progress.png" style="width: 224px; height: auto"></a></div>
+<p>Tapping "Progress" gives you a simple, visual idea of how far you are towards reaching your weekly target. Tapping the arrow on the right of the Target takes you to the title and description of the weekly targets. You may also mark the entire weekly target as complete from this screen by tapping the target number. There is a warning about this because once you mark a target as complete you cannot undo this. Each daily task associated with the task will also be marked as complete, and as such will not be included in your daily practice tasks list.</p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<h2><br/>Settings</h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-settings.png" width="224" height="321" alt="Setting screen of the Music Practice App" title="Setting screen of the Music Practice App" data-pin-media="https://www.essential-music-practice.com/images/mypractice-settings.png" style="width: 224px; height: auto"></a></div>
+<p>There are various settings on this page. You can&#xa0;<b>enter your instrument</b>. This is changes the instrument on the initial screen and is mainly there to be used in a future update with extended functionality.</p><p><b>Setting the date and time of your music lesson</b>. This is important because it tells the Music Practice App how to organize the days for planning your Daily Tasks and also allows the app to tell you how many days until your next music lesson on the Daily Practice page. You can also&#xa0;<i>set an alert to remind you about your music lesson.</i></p><p><b>Practice reminder time</b>&#xa0;is the time you set to be reminded about music practice each day if you haven't already completed your practice tasks for that day</p><p><b>Auto open on tasks for today</b>&#xa0;means the app opens on your tasks for the day, instead of at the home screen.</p><p><b>N.B. Incomplete practice tasks are not 'carried over' at the end of a week.</b>&#xa0;Since your weekly and daily targets are unlikely to be the same, even if some tasks are incomplete at the end of the week, these are not carried over to the next week. Practice planning should take place every week. Get into the habit of planning the week either with your teacher, soon after your lesson or at a given time each week if you don't have an instrumental teacher. You really will notice the difference in how much you achieve each week.</p><p>I really hope you find the Music Practice App a useful app that improves your practice technique and therefore your playing and enjoyment of your instrument. And amongst all this talk of practice remember why you are learning an instrument in the first place. If you find you have completed your list of tasks for your teacher and have spare time&#xa0;<i>find a piece you want to play and start learning it</i>. This doesn't have to be something in the style your teacher is teaching you. It doesn't even have to be with sheet music - you can start learning something by ear, or improvising, or composing… Take advantage of the fact you can play and instrument and just play for fun. :)</p>
+<h2><br/>Practice reminers</h2>
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener nofollow" target="_blank"><img src="https://www.essential-music-practice.com/images/mypractice-lock-screen.png" width="224" height="322" alt="Music Practice App Lock Screen reminder" title="Music Practice App Lock Screen reminder" data-pin-media="https://www.essential-music-practice.com/images/mypractice-lock-screen.png" style="width: 224px; height: auto"></a><div class="pinit">
+                <a data-pin-do="buttonPin" data-pin-count="beside" data-pin-save="true" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.essential-music-practice.com%2Fmusic-practice-app.html&media=https%3A%2F%2Fwww.essential-music-practice.com%2Fimages%2Fmypractice-lock-screen.png&description=It%20always%20helps%20to%20get%20a%20reminder%20if%20you%20have%20forgotten%20your%20Music%20Practice!"></a>
+            </div></div>
+<p>It always helps to get a reminder if you haven't completed your music practice by a certain time each day! The Music Practice App won't let you forget!</p>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<div class="ImageBlock ImageBlockLeft"><a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" onclick="return FIX.track(this);" rel="noopener" target="_blank"><img src="https://www.essential-music-practice.com/images/music-practice-app-icon.jpg" width="100" height="99" alt="Music Practice App icon" title="Music Practice App icon" data-pin-media="https://www.essential-music-practice.com/images/music-practice-app-icon.jpg" style="width: 100px; height: auto"></a></div>
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<a href="https://itunes.apple.com/us/app/music-practice/id527626664?mt=8&uo=4&at=11lmGm" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+<!-- start: shared_blocks.106831546#Divider -->
+<hr style="color:#000000;background-color:#000000;border-style:solid;width:80%;height:1px;margin-left:auto;margin-right:auto;">
+<!-- end: shared_blocks.106831546#Divider -->
+<!-- start: shared_blocks.155406368#Clear All Break -->
+<br clear="all">
+<!-- end: shared_blocks.155406368#Clear All Break -->
+<!-- start: tool_blocks.forms.6863694151612084 -->
+<form class=" FormBlockCenter" method="post" id="formBuilderForm_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC" action="//www.essential-music-practice.com/cgi-bin/fb/FormProcess.pl" onSubmit="return validateFormBuilderForm('6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC', form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC)" accept-charset="UTF-8">
+<style>
+.form_builder_form_field_is_missing {
+  color: red;
+}
+</style>
+
+
+<script src="/ssjs/form_builder/validate.js" type="text/javascript"></script>
+<script>
+    var form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC= [];form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC.push({
+            "field_name": "_" + '9933809516739028',
+            "field_label": "formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_9933809516739028",
+            "type": "default",
+            "required":true,
+          });
+form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC.push({
+            "field_name": "_" + '8977936759554098',
+            "field_label": "formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_8977936759554098",
+            "type": "default",
+            "required":false,
+          });
+form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC.push({
+            "field_name": "_" + '1548343826254835',
+            "field_label": "formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_1548343826254835",
+            "type": "email",
+            "required":true,
+          });
+form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC.push({
+            "field_name": "_" + '3427097328023561',
+            "field_label": "formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_3427097328023561",
+            "type": "default",
+            "required":false,
+          });
+form_builder_fields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC.push({
+            "field_name": "_" + '4198599012657907',
+            "field_label": "formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_4198599012657907",
+            "type": "default",
+            "required":false,
+          });
+</script>
+
+<input type="hidden" name="DOMAIN"          value="essential-music-practice.com" />
+<input type="hidden" name="DOMAIN_ID"       value="49186" />
+<input type="hidden" name="FORM_CODE"       value="6863694151612084" />
+<input type="hidden" name="SUBMISSION_TYPE" value="1" />
+
+<table class="formwrapper formbody" cellspacing="0" style="width: 100%">
+    <tbody>
+    <tr>
+      <td colspan="2">
+        <div id="FormLayer_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC">
+          <div id="MissingFields_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC" style="display: none" align="center">
+            <br>
+            <strong>This Form cannot be submitted until the missing<br> fields (labelled below in red) have been filled in</strong>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><h2 style="text-align:center">Contact us regarding the<br> Music Practice iOS App</h2></td>
+    </tr><tr><td colspan="2" style="font-size:80%">Please note that all fields followed by an asterisk must be filled in.</td></tr>
+    <tr><td align="right" valign="top"><b><span id="formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_9933809516739028"><label for="_9933809516739028">First Name*</label></span></b></td><td><div style="padding-right: 6px"><input type="text" name="_9933809516739028" value="" size="35" onFocus="SS_LDR_recaptcha()"/></div></td>
+        </tr>
+    <tr><td align="right" valign="top"><b><span id="formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_8977936759554098"><label for="_8977936759554098">Last Name</label></span></b></td><td><div style="padding-right: 6px"><input type="text" name="_8977936759554098" value="" size="35" onFocus="SS_LDR_recaptcha()"/></div></td>
+        </tr>
+    <tr><td align="right" valign="top"><b><span id="formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_1548343826254835"><label for="_1548343826254835">E-Mail Address*</label></span></b></td><td><div style="padding-right: 6px"><input type="text" name="_1548343826254835" value="" size="35" onFocus="SS_LDR_recaptcha()"/></div></td>
+        </tr>
+    <tr><td align="right" valign="top"><b><span id="formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_3427097328023561"><label for="_3427097328023561">Country</label></span></b></td><td><select name="_3427097328023561" onFocus="SS_LDR_recaptcha()"><option value="Country">Country</option><option value="United States">United States</option><option value="Canada">Canada</option><option value="----------------">----------------</option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Anguilla">Anguilla</option><option value="Antarctica">Antarctica</option><option value="Antigua">Antigua</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Bouvet Island">Bouvet Island</option><option value="Brazil">Brazil</option><option value="British Indian Ocean Territory">British Indian Ocean Territory</option><option value="British Virgin Islands">British Virgin Islands</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Cocos Islands">Cocos Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo">Congo</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="East Timor">East Timor</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Falkland Islands">Falkland Islands</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern Territories">French Southern Territories</option><option value="Gabon">Gabon</option><option value="Gambia">Gambia</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Grenada">Grenada</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard and McDonald Islands">Heard and McDonald Islands</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Ivory Coast">Ivory Coast</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribadi">Kiribadi</option><option value="North Korea">North Korea</option><option value="South Korea">South Korea</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macao">Macao</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Martinique">Martinique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mayotte">Mayotte</option><option value="Mexico">Mexico</option><option value="Federated States of Micronesia">Federated States of Micronesia</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montserrat">Montserrat</option><option value="Morocco">Morocco</option><option value="Montenegro">Montenegro</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="Netherlands Antilles">Netherlands Antilles</option><option value="New Caledonia">New Caledonia</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="Norfolk Island">Norfolk Island</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Pitcairn Island">Pitcairn Island</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Qatar">Qatar</option><option value="Reunion">Reunion</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="S. Georgia and S. Sandwich Isls.">S. Georgia and S. Sandwich Isls.</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia">Serbia</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="St. Helena">St. Helena</option><option value="St. Pierre and Miquelon">St. Pierre and Miquelon</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Svalbard">Svalbard</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Togo">Togo</option><option value="Tokelau">Tokelau</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Turks and Caicos Islands">Turks and Caicos Islands</option><option value="Tuvalu">Tuvalu</option><option value="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Vatican City">Vatican City</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="US Virgin Islands">US Virgin Islands</option><option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option><option value="Western Sahara">Western Sahara</option><option value="Yemen">Yemen</option><option value="Yugoslavia (former)">Yugoslavia (former)</option><option value="Zaire">Zaire</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select></td>
+        </tr>
+    <tr><td align="right" valign="top"><b><span id="formBuilderFieldLabel_6863694151612084_9AE88164_8DD5_11F0_A61A_5619337CD7DC_4198599012657907"><label for="_4198599012657907">Comment</label></span></b></td><td><textarea name="_4198599012657907" rows="8" cols="35" onFocus="SS_LDR_recaptcha()"></textarea></td>
+        </tr><script language="JavaScript">
+		function playSound(bPlay) {
+		  if(is.firefox || is.safari) {
+		    if(bPlay) {
+		      window.open('//www.essential-music-practice.com/cgi-bin/CAPTCHA/Sound.pl?domain=essential-music-practice.com&name=6863694151612084','SoundWindow','scrollbars=no,resizable=no,width=10,height=10');
+		    }
+		  }
+		  else if(!is.ie) {
+		    var sound = new Audio('//www.essential-music-practice.com/cgi-bin/CAPTCHA/Sound.pl?domain=essential-music-practice.com&name=6863694151612084');
+
+		    if (bPlay) {
+		      var auEmb = document.getElementById('auEmb');
+		      auEmb.innerHTML = '';
+		      document.getElementById('auEmb').appendChild(sound);
+		      sound.play();
+		    }
+		  }
+		  else {
+		    var DOM = (document.getElementById) ? true : false;
+		    var auCon = (DOM) ? document.getElementById("auIEContainer") : document.auIEContainer;
+		    auCon.src = (bPlay) ? "//www.essential-music-practice.com/cgi-bin/CAPTCHA/Sound.pl?domain=essential-music-practice.com&name=6863694151612084" : "";
+		  }
+		}
+	      </script>
+	      <tr>
+		<td colspan="2">
+		  <bgsound id="auIEContainer">
+		  <div id='auEmb' style='position:absolute; visibility:hidden'></div>  
+		  <p>Please complete the challenge that you see below.<br><!-- (If you cannot see it, click to hear the word, and then enter it.) --></p>
+		  <p>
+		    <a href="#SOUND" onClick="playSound(true);"><img class="captcha_img" src="//www.essential-music-practice.com/cgi-bin/CAPTCHA/Image.pl?domain=essential-music-practice.com&name=6863694151612084" align="middle" width="240" height="52" border="0"></a>
+		    &nbsp;&nbsp;
+		    <input name="submission_challenge" type="text">
+		  </p>
+		</td>
+	      </tr><tr>
+      <td style="text-align:center;" colspan="2">
+        <input type="submit" name="Button" value="Submit">
+      </td>
+    </tr>
+    </tbody>
+</table>
+</form>
+<!-- end: tool_blocks.forms.6863694151612084 -->
+<!-- start: shared_blocks.30025638#above-socialize-it -->
+
+<!-- start: shared_blocks.202573975#Book Ad -->
+
+<h3>Expert Practice Secrets</h3>
+<br clear=all>
+<div class="ImageBlock ImageBlockLeft"><a href="https://www.essential-music-practice.com/practice-makes-perfect.html" target="_blank" rel="nofollow" title="Go to Practice Makes Perfect"><img src="https://www.essential-music-practice.com/images/practice-makes-perfect-3D-small.jpg" width="139" height="177.92" alt="practice makes perfect by simon horsey" title="practice makes perfect by simon horsey" data-pin-media="https://www.essential-music-practice.com/images/practice-makes-perfect-3D-small.jpg" style="width: 139px; height: auto"></a><div class="pinit">
+                <a data-pin-do="buttonPin" data-pin-count="beside" data-pin-save="true" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.essential-music-practice.com%2Fmusic-practice-app.html&media=https%3A%2F%2Fwww.essential-music-practice.com%2Fimages%2Fpractice-makes-perfect-3D-small.jpg&description=Read%20Practice%20Makes%20Perfect%20to%20hack%20the%2010%2C000%20hour%20rule%20and%20make%20more%20of%20your%20music%20practice%20in%20less%20time."></a>
+            </div></div>
+<p><span style="color: rgb(247, 10, 10);"><b>Frustrated with your practice?</b></span>&#xa0;Read&#xa0;<a href="https://www.essential-music-practice.com/practice-makes-perfect.html">Practice Makes Perfect</a>&#xa0;and hack the 10,000 hour rule.<b> Cut your practice time by up to 25%! </b><span style="font-weight: normal;">Make faster progress, learn pieces and scales faster, memorize more easily, and much more. "<em>If you play an instrument you need this book</em>!"</span></p><p><br/></p>
+<br clear="all">
+<br clear="all">
+
+<!-- end: shared_blocks.202573975#Book Ad -->
+
+<!-- end: shared_blocks.30025638#above-socialize-it -->
+<!-- start: shared_blocks.30025550#socialize-it -->
+
+<br clear="all">
+<br>
+<!-- start: tool_blocks.socializeit -->
+<div id="socializeit_192779598" class="js-socializeit"></div>
+        <script type="text/javascript">  var https_page;
+        var socializeit_options = socializeit_options || [];
+        socializeit_options.push({
+          el_id: "socializeit_192779598",
+          pack:2, 
+          domain: "essential-music-practice.com", 
+          https_page: https_page,
+          share_horizontal_label: "Share this page:", 
+          share_sticky_label: "Share", 
+          payItText: "Did you already share this? No? Share it now:", 
+          payItExpanded: "<p>Would you prefer to share this page with others by linking to it?</p><ol><li>Click on the HTML link code below.</li><li>Copy and paste it, adding a note of your own, into your blog, a Web page, forums, a blog comment, your Facebook account, or anywhere that someone would find this page valuable.</li></ol>", 
+          szColor: "",  
+          whatIsThisLabel: "What&rsquo;s this?",
+          whatIsThisUrl: "",
+          background_color: "",  
+          version: 1,
+          display_variant: ""     });
+        </script><!-- end: tool_blocks.socializeit -->
+
+<!-- end: shared_blocks.30025550#socialize-it -->
+<!-- start: shared_blocks.30025609#below-socialize-it -->
+
+<!-- start: tool_blocks.whatsnew.eyJ3aWR0aCI6IjEwMCUiLCJibG9nbGV0X2RhdGUiOiIxIiwiYmxvZ2xldF9jb3VudCI6IjMiLCJibG9nbGV0X2Rlc2NyaXB0aW9uIjoiMSIsImhlYWRsaW5lX2xpbmsiOiIxIiwiYmxvZ2xldF9tb3JlIjoiMSIsImhlYWRsaW5lX3RleHQiOiJSZWNlbnQgQXJ0aWNsZXMiLCJibG9nbGV0X21vcmVfdGV4dCI6IlJlYWQgTW9yZSIsInJzc19pY29uIjoiMSJ9 -->
+<div class="WhatsNew" style="width: 100%">
+      <h2><a href="https://www.essential-music-practice.com/music-practice-blog.html">Recent Articles</a></h2><div class="WhatsNew-subscribe">
+	  <img loading="lazy" width="16" height="16" class="WhatsNew-icon" src="//www.essential-music-practice.com/objects/rss.png" alt="RSS" />
+          <ul>
+            <li>
+              <a href="https://www.essential-music-practice.com/music-practice.xml">
+		<img loading="lazy" width="91" height="17" src="//www.essential-music-practice.com/objects/rss.jpg" alt="XML RSS" />
+              </a>
+            </li>              <li>
+		<a href="https://feedly.com/i/subscription/feed/https://www.essential-music-practice.com/music-practice.xml" target="new" rel="nofollow">
+		  <img loading="lazy" width="91" height="17" src="//www.essential-music-practice.com/objects/feedly.gif" alt="follow us in feedly" />
+		</a>
+              </li>              <li>
+		<a href="https://add.my.yahoo.com/rss?url=https://www.essential-music-practice.com/music-practice.xml" target="new" rel="nofollow">
+		  <img loading="lazy" width="91" height="17" src="//www.essential-music-practice.com/objects/addtomyyahoo4.gif" alt="Add to My Yahoo!" />
+		</a>
+              </li>          </ul>
+	</div><ol>		      				  
+		      <li>
+				    <h3><a href="https://www.essential-music-practice.com/curdridge_parking_test.html">Curdridge Parking</a></h3><p class="WhatsNew-time"><abbr title="2025-07-10T18:11:45-0400">Jul 10, 25 06:11 PM</abbr></p><div class="WhatsNew-content"></div><p class="WhatsNew-more"><a href="/curdridge_parking_test.html">Read More</a></p></li>		      				  
+		      <li>
+				    <h3><a href="https://www.essential-music-practice.com/how-to-speed-up-scales.html">How To Speed Up Scales and Improve Accuracy</a></h3><p class="WhatsNew-time"><abbr title="2024-10-13T04:23:56-0400">Oct 13, 24 04:23 AM</abbr></p><div class="WhatsNew-content">How to speed up scales is something many people want to know, but speed should also come with  accuracy. Read on to find out how to do both.</div><p class="WhatsNew-more"><a href="/how-to-speed-up-scales.html">Read More</a></p></li>		      				  
+		      <li>
+				    <h3><a href="https://www.essential-music-practice.com/from-an-opera-singer-on-her-death-bed-to-leonard-bernstein.html">From an opera singer, on her death bed to Leonard Bernstein </a></h3><p class="WhatsNew-time"><abbr title="2024-01-29T15:36:45-0500">Jan 29, 24 03:36 PM</abbr></p><div class="WhatsNew-content">I enjoy reading the music more than hearing it.   From an opera singer, on her death bed to Leonard Bernstein </div><p class="WhatsNew-more"><a href="/from-an-opera-singer-on-her-death-bed-to-leonard-bernstein.html">Read More</a></p></li></ol></div><!-- end: tool_blocks.whatsnew.eyJ3aWR0aCI6IjEwMCUiLCJibG9nbGV0X2RhdGUiOiIxIiwiYmxvZ2xldF9jb3VudCI6IjMiLCJibG9nbGV0X2Rlc2NyaXB0aW9uIjoiMSIsImhlYWRsaW5lX2xpbmsiOiIxIiwiYmxvZ2xldF9tb3JlIjoiMSIsImhlYWRsaW5lX3RleHQiOiJSZWNlbnQgQXJ0aWNsZXMiLCJibG9nbGV0X21vcmVfdGV4dCI6IlJlYWQgTW9yZSIsInJzc19pY29uIjoiMSJ9 -->
+
+<!-- end: shared_blocks.30025609#below-socialize-it -->
+</div><!-- end Liner -->
+        </div><!-- end ContentColumn -->
+      </div><!-- end ContentWrapper -->
+
+      <div id="FooterWrapper">
+        <div id="Footer">
+          <div class="Liner">
+<!-- start: shared_blocks.30025552#above-bottom-nav -->
+
+<!-- start: tool_blocks.faceit_comment -->
+        <div id="COMMENTING" class="fb-comment"><h3><span style="color:red;">New!</span> Comments</h3>  Have your say about what you've just read!<br>Leave me a comment in the box below.<div class="fb-comments" data-href="http://www.essential-music-practice.com/music-practice-app.html" data-numposts="5" data-width="500"></div></div><!-- end: tool_blocks.faceit_comment -->
+
+<!-- end: shared_blocks.30025552#above-bottom-nav -->
+<!-- start: shared_blocks.30025581#bottom-navigation -->
+
+<hr style="width:80%;height:1px;margin-left:auto;margin-right:auto;">
+
+<!-- end: shared_blocks.30025581#bottom-navigation -->
+<p><br/></p><p><a style="color: rgb(0, 0, 238);text-align: start;" href="https://www.essential-music-practice.com/" onclick="return FIX.track(this);">Return from&#xa0;<b>Music Practice App</b>&#xa0;to the&#xa0;<b>Essential Music Practice Homepage</b></a></p><p><br/></p>
+<!-- start: shared_blocks.30025549#below-bottom-nav -->
+
+<hr style="width:80%;height:1px;margin-left:auto;margin-right:auto;">
+
+<!-- end: shared_blocks.30025549#below-bottom-nav -->
+<!-- start: shared_blocks.30025580#footer -->
+
+<hr style="width:60%;height:2px;margin-left:auto;margin-right:auto;">
+<script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '11lmGm']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+<!-- Start of Amazon Publisher Studio Loader -->    <script>  window.amznpubstudioTag = "hearing-protection-20";  </script>    <!-- Do not modify the following code ! -->  <script async="true" type="text/javascript" src="https://ps-us.amazon-adsystem.com/domains/musiandthin-20_0a1aaeb5-aebd-4c8d-bce6-0ff95f5f21a3.js" charset="UTF-8"></script>    <!-- End of Amazon Publisher Studio Loader -->  
+
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=fe200d77-1cfa-4dc7-af6e-d19b79c77ffd"></script>
+<p>© Copyright 2008 - 2017 Simon Horsey and Essentials For Music<br/>All Rights Reserved</p><p><br/><a style="font-family: avantgarderegular;font-size: 12px;color: rgb(0, 51, 0);" href="https://www.essential-music-practice.com/simon-horsey.html" onclick="return FIX.track(this);">About</a><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;">&#xa0;&#xa0; &#xa0; &#xa0; &#xa0; &#xa0;&#xa0;</span><span style="color: #003300;font-family: avantgarderegular;"><span style="font-size: 12px;"><a href="https://www.essential-music-practice.com/privacy-policy.com" onclick="return FIX.track(this);">Privacy Policy</a></span></span><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;"><a href="https://www.essential-music-practice.com/privacy-policy.com" onclick="return FIX.track(this);">&#xa0;&#xa0;</a> &#xa0; &#xa0; &#xa0; &#xa0;&#xa0;</span><a style="font-family: avantgarderegular;font-size: 12px;color: rgb(0, 51, 0);" href="https://www.essential-music-practice.com/disclaimer.html" onclick="return FIX.track(this);">Disclaimer</a><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;">&#xa0;</span></p>
+<hr style="width:60%;height:2px;margin-left:auto;margin-right:auto;">
+
+<!-- end: shared_blocks.30025580#footer -->
+</div><!-- end Liner -->
+        </div><!-- end Footer -->
+      </div><!-- end FooterWrapper -->
+
+    </div><!-- end PageWrapper -->
+
+    
+    <script type="text/javascript" src="/sd/support-files/fix.js"></script>
+    
+    <script type="text/javascript">
+        FIX.doEndOfBody();
+    </script>
+    <script type="text/javascript" src="/sd/support-files/design.js"></script>
+<!-- start: tool_blocks.sbi_html_body_end -->
+    <script>
+        var SS_PARAMS = {
+            pinterest_enabled:true,
+            googleplus1_on_page:true,
+            socializeit_onpage:true};
+    </script>            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=232556283458134&autoLogAppEvents=1"></script><style>.g-recaptcha{ display:inline-block;} .recaptcha_wrapper{text-align:center}</style>
+	    <script> if (typeof recaptcha_callbackings !== "undefined") { SS_PARAMS.recaptcha_callbackings = recaptcha_callbackings || [] }; </script><script>
+  (function(d,id){
+    if (d.getElementById(id)) {return;}
+    var s=d.createElement('script');s.async=true;s.defer=true;
+        s.src = "/ssjs/ldr.js";s.id=id; d.getElementsByTagName('head')[0].appendChild(s);
+   })(document,'_ss_ldr_script');
+  </script><!-- end: tool_blocks.sbi_html_body_end -->
+  
+<!-- Generated at 19:35:01 09-Sep-2025 with cookingtime v159 -->
+
+<script async src="/ssjs/lazyload.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>St James Rehearsal Tracks</title><meta name="description" content="Rehearsal tracks for St. James Choir"><meta name="robots" content="noindex,nofollow"><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/sd/support-files/style.css" rel="stylesheet" type="text/css">
+<!-- start: tool_blocks.sbi_html_head -->
+    
+<link rel="canonical" href="https://www.essential-music-practice.com/sjrehearsal.html" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.essential-music-practice.com/music-practice.xml">
+<meta property="og:site_name" content="Essential Music Practice" />
+<meta property="og:title" content="St James Rehearsal Tracks" />
+<meta property="og:description" content="Rehearsal tracks for St. James Choir" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.essential-music-practice.com/sjrehearsal.html" />
+<meta property="og:image" content="https://www.essential-music-practice.com/images/IMG_1658.jpg" />
+<meta property="og:image" content="https://www.essential-music-practice.com/music-practice-fb.png" />
+<meta property="fb:app_id" content="232556283458134" />
+<meta property="fb:admins" content="simonhorsey," />
+
+<!-- SD -->
+
+
+
+    
+    
+    <script type="text/javascript" language="JavaScript">var https_page =0</script>
+
+
+    <script src="https://www.essential-music-practice.com/sd/support-files/eucookie.js" async defer type="text/javascript"></script><!-- end: tool_blocks.sbi_html_head -->
+<!-- start: shared_blocks.30025640#end-of-head -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1720928640349300",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="b52f41dd9d1c0a235d88a19c500bbb02296893160ffa1d84aafb8a02b509b7c7" async="async"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25936703-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53aef0b06d441b9c"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4736275.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '423448645284095');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=423448645284095&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- end: shared_blocks.30025640#end-of-head -->
+<script src="/plugins/crypto-js/aes.js"></script>
+<script type="text/javascript">
+    var numTimes = 0;
+
+    function goHome(iNumTimes) {
+        if (iNumTimes > 2) {
+            alert('Sorry, this is the third incorrect try. You are now being redirected to the home page.');
+        }
+        else {
+            alert('Cancelling this. You are now being redirected to the home page.');
+        }
+        window.location="https://www.essential-music-practice.com";
+    }
+
+    function check_password(form) {
+        numTimes++;
+
+        var password = form.psMsg.value;
+
+        var html = decrypt(password);
+        if (!html || html === '') {
+            if (form.psMsg.value === "" || numTimes > 2) {
+                goHome(numTimes);
+            }
+            else {
+                document.getElementById('instrMsg').innerHTML = "The password entered was incorrect. Please try again.";
+                form.psMsg.value = "";
+                form.psMsg.focus();
+            }
+        }
+        else {
+            /* Successfully decrypted the content. The password is valid. Set
+             * the cookie and reload the page */
+            document.cookie = "pwd_50455570=" + password;
+            window.location.reload();
+        }
+    }
+
+    function detect_and_decrypt() {
+        var cookie_match = document.cookie.match(/pwd_50455570=([^;]*);?/);
+
+        if (cookie_match && cookie_match[1] != '') {
+            var password = cookie_match[1];
+
+            var html = decrypt(password);
+            if (html && html != '') {
+                document.getElementById('msgDiv').style.display = 'none';
+                document.write(html);
+            }
+        }
+    }
+
+    function decrypt(password) {
+        var content = document.getElementById('ProtectedContent').innerHTML;
+        encoded_string = CryptoJS.enc.Hex.parse(content);
+        var decrypted;
+        try {
+            // Decrypt the message.
+            decrypted = CryptoJS.AES.decrypt(encoded_string.toString(CryptoJS.enc.Base64), password).toString(CryptoJS.enc.Utf8);
+            // Decode the encoded string so that it's readable. If it's still
+            // encoded.
+            if (!decrypted.match(/<!--/)) {
+                decrypted = CryptoJS.enc.Hex.parse(decrypted).toString(CryptoJS.enc.Utf8);
+            }
+        }
+        catch (err) {
+            return '';
+        }
+
+        return decrypted;
+    }
+</script>
+    
+    <script type="text/javascript">
+        var FIX = FIX || {};        FIX.passwordProtection="on";    </script>
+    
+</head>
+<body class="responsive">
+
+    <div id="PageWrapper" class="modern">
+
+      <div id="HeaderWrapper">
+        <div id="Header">
+          <div class="Liner">
+            <div class="WebsiteName">
+              <a href="/">Essential-Music-Practice.com</a>
+            </div><div class="Tagline">Crack The Practice Code</div>
+<!-- start: shared_blocks.30025610#top-of-header -->
+
+<!-- start: tool_blocks.navbar.horizontal.left --><div class="ResponsiveNavWrapper"> 
+ 	      <div class="ResponsiveNavButton"><span>Menu</span></div><div class="HorizontalNavBarLeft HorizontalNavBar HorizontalNavBarCSS ResponsiveNav"><ul class="root"><li class="li1"><a href="/">Home</a></li><li class="li1 submenu"><span class="navheader">Students</span><ul><li class="li2"><a href="/efficient-practice.html">Efficient Practice</a></li><li class="li2"><a href="/music-practice-games.html">Music Practice Games</a></li><li class="li2"><a href="/scales-practice.html">Scales</a></li><li class="li2"><a href="/music-practice-books.html">Practice Books</a></li><li class="li2"><a href="/performance-anxiety.html">Performance</a></li><li class="li2"><a href="http://learn.essential-music-practice.com">Hack Your Practice</a></li></ul></li><li class="li1 submenu"><span class="navheader">Practice Tools</span><ul><li class="li2"><a href="/metronome.html">Metronomes</a></li><li class="li2"><a href="/music-practice-software.html">Software</a></li><li class="li2"><a href="/digital-audio-recorder.html">Recording</a></li><li class="li2"><a href="/music-practice-charts.html">Downloads</a></li><li class="li2"><a href="/transcribe-music.html">Transcribe Music</a></li></ul></li><li class="li1 submenu"><span class="navheader">Music Books</span><ul><li class="li2"><a href="/practice-makes-perfect.html">Practice eBook</a></li><li class="li2"><a href="/lesson-notes.html">Lesson Notes</a></li><li class="li2"><a href="/sheet-music.html">Sheet Music</a></li><li class="li2"><a href="/quotes-about-music.html">Music Quotes</a></li></ul></li><li class="li1"><a href="/kids-and-practice.html">Parents</a></li></ul></div></div>
+    <!-- end: tool_blocks.navbar.horizontal.left -->
+
+<!-- end: shared_blocks.30025610#top-of-header -->
+<!-- start: shared_blocks.30025551#bottom-of-header -->
+
+
+<!-- end: shared_blocks.30025551#bottom-of-header -->
+</div><!-- end Liner -->
+        </div><!-- end Header -->
+      </div><!-- end HeaderWrapper -->
+
+      <div id="ContentWrapper">
+        <div id="ContentColumn">
+          <div class="Liner"><div id="msgDiv" style="border:1px solid #000; padding:2px; width:300px;" align="center">
+ <p id="instrMsg">Please enter the Password.</p>
+ <form action="#" onsubmit="check_password(this);return false;" name="psMsgForm">
+   <p>Enter password: <input type="password" name="psMsg"></p>
+   <p><input type="submit" value="Submit"></p>
+ </form>
+</div>
+<div id="ProtectedContent" style="display: none">53616c7465645f5f81e5d0ab6a54d18d3d3bd1acc439186bd5a4f992cbf91ac96f6bb9589ef71ca60f0ee613bb0ee74fe5b4cea34e79dcb2057bd77d9ebfd4738d389ba0ae74191602ceefd318f2e4d8cc68049c2f0177c3001ea7c6d3c476927e2403abf9e99da55a872dbf68901f041a150c0eb44a2b6c3a97a8143e0adc3b2ea8e3d3cdcb34e47a17bab9bc9c17a37811ff026a8cb2550507f3953da6e7b69c51b83d45891748db9dd9a272c772715ba9e001018431e04fe99475f4d1aef35c0e505a80dbcf9fc9d6894e70acd9d26e76a7284ee7d871e154564c52e327bedd08c68e11ddc052692373dd854d0817966964dea987ac5cdac58dd156907c9ade1aad24bec5fe2289071330753ec1022f873c768b123b5921026f9641dc7a9a144a94db12096dc4a0a54afd5fb66de71bc940f35084441dc7182ea39a5ae369e5485c4c8ad4f537e735a5f399e79bb4b2efe5c12d74c99dc1613b69d9d6757f6dc64cee009fbaf96964c03033e96ea54251da56549e4f1c1f0cbf9ff68e6b9fcdfe33c929512b1f89cf4f8fa21817d8eeff5b6fd43a62bb6af843466287072227c48936643748496f8bc9ec69486dd04083ed125e7157a868722235c206f3f180ef85e64b8044c0944d23207aabfdb47c4226d37b51a33a289ab672ccbdb4d58bb88cb5b5ded7408c070d8da9dd3a904680a58df9aef7ba608114f1c36ee713ed6a6ad9fb971703960e9e2bf5feead0f803a43cf9113190e9d46235bf8c0d18207cdcaca039bd6cf6d5e530a5f64d062a11f9162cae600b6582b619ced89eea3d14f99f29f75d6106dd3e62fe7d86979f4e2f8dbd452e851869e3140a2a60744beb53bdc050a3c988a9801d3117ef1243f66d1ad075dfe94700573cd4b70b01971833abac13db0784f604cd375b241c472bfc6de4cdf1d45dcb04820102d7bab736d69d8b923d4f08be32e05fca85042c7edbdbbed2581e71900695446a54573f13f3ba0f35c6d969a5012354fddf3849b2f94c5be0ee897e9c14972b037563bed09f7ccf5d093cf780136fd33ee564a2b5d1f005ffcf4284f228e9cecff0bd29a7f3a85a61612ce9cb6259dc4b3904f639a305374c1b6bb1a8caa662887e9e0d3a06ed7a669c960da3eb314f17e07c155afdb0a20a86f4d4ef60139711799301ced6265c9ada6858cba9b55f9b180eb2ebe6be33490768b54a1fb487c2cc0afa40b641ef89183741fe179b592de6e4756396336080825245a8525d23a3db6de0408ded3a52f0d80df48759c40792e507f425b815f7c8464fcfde92a15b8fb5329dde940b3d0a1a672b21e6f07d4a4140b14d4a01542c02f38bf5383dc16dc4932db1c1fbe8505d20a6f9dd5ff32d031f1323e0305a82ea3b88aa1e160d36f870f46da8387ee9e8ac24db07290e5053634bb16eeeb11b281eb84c21d622a3cd49c50ba9f852318fe03ccada23756eabf2b2092d74e18c6988b6dacfe6482c7a58beaeb12ab2c45f67d0449c6a00bfd49241d551f31c96e1f92f01a5c15aa6322050b0926f9dc0be63955e68e90d41a7bc42cdcb05b72d2e8f37617b41771f7a5c9019529069982bcb0462841c06e94d933713f539f64c6f045f31a980c991027dcb0e01036ba740b718544734fcfcc1c9c8b9ea7d05f850cb7fa41a4dd72ee3fc8b0c01bc8accf2fd10f9615ead6500b6678d3796c71f38603bcf19299730a9057dd34360010d356b4aa92d3814a50ee4ca9ca5fc44a336cb01901982c82abb2e3a3e415bf7743bf31f1a3bf214e88039869490cbc476c7f04610e2d7595b47d9dd6c606e9d44c6f791a4f636994664ad20933b3f1397ba216d76a21231e9f25b92a20f156c0288fbcfa8877ac6419aeb67a8794bd8c7f013c3855c9eb0ab5126f113a02cc448364525559e4da31f8953c485a8e2eaa73d55f6ec6d394441b50712321d5ea374aa22693e21145db6b350b79de80c98e8662b56f201a348e1b9f504bd95ef3677ab723e4dd2315389d909eee86f1c5c0665af9b7852399903deebc86d045395ebcc67bef1571c76129f916e4e5485ee4f7f4cf6719e7557ac05c9c625ab03196866850cec1356a48d91a54dcceec64f269f46db79a59d1af604c9d7acbbeaa6b69ebf7ed50e18abf9c6d97d166c13f949a880346035fe41d2d56acffb8b862f1d43c7cdc882f8cc71751959c8b9f8215c376bd6341eb12f1aa9ecb2e63dc0b82e3f4114bc36648a73e06f6587b386f50d877dd2fae63d2d62c777b4db1058b1d1b3fde73501c72d2840c29e2cc5c6b25d53105841c4744f811b11c231ab0f1941045e00762196f09be6c80b0fe782da20c2c8c099553bafe07584d1a221f3f83736b71459fbcbf1d27e526d872e9a14b2b4709cf345e8941e6de13908c0523a1793672c3ef7b6735ed5a6045d515844f03d3c3904e4c05c166f9fbef0db1bbe22a51577cd14f71509e28c90b01f3376892142933c5e7a4834d47c8141594816f2ebb7c8cf120ffa9319be7dbb248b16a419f6afc026fd9c0e900580d44325406a3f1eb984adb492ee8a68279216c61fbcd3b69d49835614c63c747580c22c2812aad57b4e7a7efa2f69d0c235d4b6e700ef3f318f7697453caf0693b49d4d7d4e58656961301e2539667aa108e578e7c0de873507a3084543046cc3689c5d3b0e05b5e9f3ae0baef6350a66cf2533ce4ce5e08ddb0180038d6f35d477bfbd988cb7b6bb7be60027cbb07d86d9c230eea2d188c4e859b9fe0048b878788f72721de71459ea55a598061a8037a13a4a86e08d8df1eb5550261aca412e433a1488c7ea652fdd5ad04fa4a9004d76cc3c9981a08b43958bda27f1cd1b3ff03c44897abad37b16c8a2c5bff80eff007e63ee250aea20498ef995e45a4d352141344ef8b86f28a6efc545d63733212e00ea0ff94b85bdbb702e7598a18f08aca826657e8d7bac6a2c103e4144823c4dbb3250bd3c19532ce6c60d6aca961c9732505a4cfb67bd336fba2414f1570db2f8584932a523686f144ae8b2d34a41a9a9ed52efc6afd18dac4d75dc755455a6657c605e972fbe98be699f8dbbb04f02e5989f4855bd0fa34fde901df1a5fb7e8d76f79718570ae083b0006e015e2d62395899c3fd57f64f7509e04fdc9c8dc25f3d6ec9595ed8fe71ae197782d8ebb5d0c11d3b7e2ba4ce5bfed8a9e89c2ef521d5855dcb65be274c1920a135c39f32a4236094fe396b31f855c68cf54dc55d7184bbc6946d85a1862a31dae6329bc4d560c7b1f83d638053bb59575269c4bb3892a345e53d0cd0b7c6cd8bd98dd765086acff51ed989e37a53992ef098592e1d623af6c076cf86e8ca40e59b4cbab295f2faa7d274ca31053480ed2f273f7b1c36f76b7d731b0369cfea8a96a9b6843cc918a17c1f99a22fd5eb724e92b81300fdb5af548b5b057987cd14582ece82e6c49656665d2d916f9a98be0771c5369cd66eccc7fcd8a0a391331d56c3f60dd29a678dd504513f769650918a06da2139a586e274bcbedd0fd34854664f7080ac4d8c461ed7b621d7e937389c9229c9fa1b658ccd6281936e51d01225b4c93f6551e46c2af0c0c69785a45d83c060ee46dc10d9d8fe18581da00af957d054b70c6b6e7601e1c8b7575af431c197d03ebc5e7e8ec892dae97237a6ec01ed77a805a3b52c493469cecfb284b9df3e79fdb102660e1268c5aa24da191054f8864273aa2daeeaf0cf4bdd91c933e91889ac6e6f9045c9999164d74b416b382f3ea0f43f4128b542fde3afb3f85b3a520a790ed117f8739b35e094f9bc11ec935dc9285bffd82aed683084ccf1f6dd3f63bc672ed49b27f55e57f35bdc2629949c25e353c3ba9a90fc2d0016f231dd07c5e9732fdde42159421e24591a1238f144dedfe36871d62ae3a4e3ed7d378e6f433d58d49ec5e80f35bbb76caa942140dc90b48ac351d6afe0907fcb9f5294f8228c700f0d62b7930d424704815eb1fd35665a517783e99467c49955715ba54e7bf34e5db3402a05f3ce99c28fe95d98f134034afdc5ec6fd8b201ec82b41f3b7bdcc9c79f9818a7bfd3533f407515ea9ac2e06ca4e5399d7a24ec25b4b3a85051b8cc6165afaececb6220e39f59b21a72f033690d14879c04f20692b4b12204bb616ee2d1a30e45ff3400b4bda3671f3894edbc97e5c4f67bed814748c1aa99ef1eb32cd3b227ce6d194edc4748f737f7143bd56821803203de0925b55050ff3e0b3226d01df63f9da72e7a37c34f0dfb2f2157e7021b941dcb198fb3aa90becbd5937f7280de038c6efc763682988236b087cdb3e7789f30b3af71a951ba4aeb563217c8f17e2fea69344404ac9d5e833c5b6d08d864f5433ff9be00b73e6123a4736ab4c468628104b974835a0a7bae09124de2eafa91672fffacae3b221ea043d73cd4265eed8e3bc8e4e1c8f878429311a26801b9b48f461eaed97163069805357be6db5c3510fb1caf0d888982c43e4d5e417e48b83dcee49e9f9bb1b533f6177fff7e1e2c3ab17baa5d01d529bbd0d8f2d4cd0ee38193829caee82ae35a21b2fba99c24b7a28afd4d11292600933662b7d5110b0d1e262125851d9aa18e2aa11081af64f0d27510455b694327613b341008884e57f35142f68822cc39de294b05c292843fe485aabc7fb9939e665d22159614be5f15698a1784277c90ac641acca083873073a2a331b5baeb8bfddffdd6c0ee9c4eabfcb646ce492f9e4dc591bdf64d8d222f80f008ebb4d69275423cad3400ddaf183cc33afc655a7e6daed109d9c0b713214b785dfb2f13b78a09a17f69d7c5e528fdb6045e7d56b0c652a32ad13052a96035248f1a6dc7f2a9c3438479f2dfca230b202aa3b89d0f36e8fb6b68b289530f96324e0f12482867b74218b8a7a65ce18ceea2c86ec0f7497a652136e97437c7a8769b045cde350d8e88b247becc9a5b1bd826eaf2d4440afbe41c83ec468d16a298cf581f9c76f54e071ce30a81c58e31cf007e13da50a04a0860398953b2cf259fc17f8849d70cdded86bf9aaf7497c54357c4df04166e42b9c1603864401d90d95ac075d87b3040df646799236444d0a6e7d4ec496b3c59d97c3d40ec415012cec01d0fa79cdbab5d4e44f21f5e058cf4c120bc26a28330044b402a64899220f59293e7071e84d8d4836712a914500c1d765fae82dcfddf7488e4164406d75d2c41be399ecab87bf00bf687714f1420bb57c829487263ac11728331bb5fe5360f633f4a9bd9f167a47cf7286f761ca1e88a303219863a6283e78534042c9d866a83e5a4d49a6eb778655f63243e2fb7b84a11bee3653250538db1b438447da86a1c2c5222ee8a372a83f03cd3abba0fa062eff2f73fb40a7057dba01a42742d2917c616bb0964f0cae858e6b08ae228c0440b8c38af8384f88387f393ab6a26104e6ef369704ef031192167b377c669ae4664403be0542b952cc0ff2e77ca6ee11dccf4fcb2752febdb6871c952d91cc0a026ab8d57a18adaac9f00c9b27c4b32671cb64ab36b0fc50d2ffe63b6e8bd63b0fdf31a6da86bf00407da7af0dae0f718f7e75af8babceb9107084eadf2f86b740fdbc21d50b318108ce863336c223e4fd5f34736584da333341befffbffa6797921fc1dffef34581d380c1a9216b55d54049e62a386971e3f96819641e040b7f9f85d563b2ed25992c4786d8b965f64ac5600568c6376ee48da3537b8ee41949a85f451cd2ae746024ba35648901a7f8856aa7f8e889a83d58ecf2d2e27464476eebeec4e465452d3423872cfee089679e20d63bbce96dd59f0940d312bb829831d05315ed2ca382dfc2df897472e1be68fdad3057fbf586b255e7231d00574c3fed322b6f201f2cc411f438b017963ac59c23fb4a4503552b188ff6fba3fc3325194123dc61d1238ed53813d3355f8c92352f669dd7e8196c7c9dda25e609bb3749a73ec9f394b92a76ae99d77a4bbfe162f0c5c05082005dd299939b0db34a977a873ea2fd50a107a94a56722622f1708a35941744e38faca1c598116d4a6a8df5edaeeaf5e028f17669448ed0e6e9c68154ff5f2616a675b252b69dfb73db495addcf72d41bf5e7041193bd4af780036eb5a0e1fae34d3c9a99a222c259902e9a8f695e999d3e1f50a7db741e446c2bc47302c6dbfeedc59b99387de20b692dbd43b37881f3be150ed0a27089f6e98e619fc67e98616e2dfa141f756084d0deb05986e3f7d2b516e4c32aebc0ccca76a8f21f2269589040c269b780f833308629c964c494c7316fa160be5076a4262ff0bc3994ac5e98d3805f26656ff42ec8cfba5616fa168e6692fae073804ba72b28fa850389c0eb8b099b71e7aa75ddc09ce7da18d8a66df9fb1765f71e2e510a52a49333190096ae7be33f43c754f5869291f974764eb437c0fc438bcdf7749d6c4ba6cb46aa1d915230cd0c4d254963a4b83ba99298120a9ee1c480f98cbaf7e15b1c3c7fb3c002d350aa89f7eada41b46698d02016cc62de805a4bf51240be7ddd6707ab865f7099ce5140d50c6507ddc3beef33fdfb45ec958520f0b6070a1c5a8e4db84371b2e96d3b2077ecb33cd2a85b8789ff3041886a61689575ebd639341449376e0326a8744fc81320bda3201d6bb04f34aa92f892cf4a317ed989d20d5fd4235ac434cc78e765400deaf1fbe7213f0b519730ca5c0b36b80d7d8fdcdf954be0b33f420c59a7ea25d9ca3ae45a4dac1393d10cae87b856fb1b614b2809bc87507732191343f706b5dee92cadb3982087fe8e1acdf1c17cafffbaa0c20001a691bfed53862c72a7ed96344e9bade05cacb916fc89fd698d004894763168c197d3fb5bfe2e2841ea462e2be36ef43a0a2aa1afe7cf507a849db34c76cf5938731be4255b5b607f9f4c907a6a3bdc93a1732686b26320d266cc632d275186c62164b337fba28fd4792415cb4da74b5b587ab81614f0a6e8b723aabd8cb15a5bfb97210517b38b012eebc7b8f6791feafc37c19a49d65cca038a247b401b74fc755602e53310682bccd03bbdad7d182dcc016461690f987733d702bf21a3b81fbc0e1e5615b45b0f17ea435b79b662270ab51c847c816a319afe2e8ec1e395a799b9ba8316ff320ce5ee18ab657ebcbcd46e085f05f3cdde8b5795411efed4cd86b89743cb2c974fdbf01424fa3ef593ff0ee4c1ce494beb053dd3a9568ba01b6cf372f1bbe23be70a0f00ff2afce17afda5b54edd641bba32794ae7ae52c520d7e9eca8cd658c0a5e99ae8e631bed36c4c17d0d50a5c52b5a3141a9ea924c9f817f5e448f737955c2b9356b2cec374be6447758b446f0db9d3e32abc55a3fdcd69c7143caff8ca654a959c4ef141570246879cd7742cd60f42230b6c7b9688fdbd6ac4995f91f7790f7874f1dd40c2badcd7fa63011bac14315cdfbf141061b2df9c68561974a98a153e3d2abd786c00cb98d14e192ac43dcdf706e6dd7e01862d1bf141015a3f7e740f5798155e6e99e99f764adbe4a5155d1e72d232dca8725b819245890d3029cc77afc62aeb5d5b21678224525da267565851909c3eb909c5ab8ad6933b991e0181718e3c3c8b6921a8231ca80d4494ea0e2a65f05b67581cbb17d1abdd1349391f74f81b5f2d318c2b07fe16293eaf4577ab0759a6690ecf3c2c07284d70d956e486c22c598673250bd868474ba9b256e8c066040fdbc12ac295e5410186de92a69cd3e4dfc0969a076ea23ddc652e38f97cc4a76da11fd73438fcc42602caa56c89db37bf8aac7587b98bc90857036a3bdc6f0cae6a9087610786343df593737bcf8559b26d224ae4a45d4037fec1df2e419047449c6eb129de7096128ff9d2e159f28c7dd2ba6f4e44f0750588de758577d9fc6dc698ac0be784f5bd69c3aebed72b97a9d6c7f9c9c5914a28ec46a3bc658170bab5bb3639b17800afc46a84c2965bdc357818738e8ccf3c00fb9a943bdf7df5c850ddf69cb846de9d7a5ec6bde6c2ae4c6a2014212423499f61490acf5d46a701da372587901c1b98aac8a5be91ed15204be86ff2d1f57bfb9f211aeead9f08ac4fa8a0bf831fdb20527fdb00c426430a32129404c53496cc874095fc7abf68d92b41336faa1968db98845f15e2b4ac82823cf9ab925d93329b47bd7ba868aeb314ec7719d1124f29d88e0986c75a08641f13736854f14b689494cd3013da01a2574e2d06a9ef4753b674dbc9a90570942c9764840450c6f44f1c3548b969f30027f5522c8ff59f2902e51e9dda5f52574c8a79c3f631e473d7601b1e45344597bc0c59d243bf84494d3336e48f0ef1328099db94873247157eae1f2d5ed11a9055e67ed7dfc35d24479d69c87bf819a7b814f0be869ed10c3282874c885a9a84eb68fce34e7abeba7e5ce71c610dc7895bcdc534232a99a77a31e34efc9c2146ae988e9dac6c87c159d8ec28301a015166893e2207d16b4ab8097f7478685e568935b489ea4b5895aeb5051485063b26fd68b76c4edb88aed4f697206c8df44cc2ec7b47db8e40c7b4ad7fa25c835e7aab2b3ebc3ca019618d204f2a5d4860d138a18c2f6320ca3d51f1186c14daa9a22a432d07b052f52627c146d8ee6f52432d54450454f444a80f56f573499ffa16fe84c57a7ce35e4382ab8a1380989012164d300e12ab414119bead3195096f67a7f7f5b3aa11866f4ec656fe160fe4f5ebd53edc90790a36d846593b2cee10e236639eaaf1ecf074e287abcd9208590c48294325b1b4dd7b6879c010c4f158fc30358a24f7af2757ea1ea77baa9689f872b58bad26f346ab14e8c45f7fe9b2248cc3a34437440ed9128e7d5f2aa2cf33b62a3306e224ef624e83942d18eefda8ec41cd93ec3219686e1391dbf6be51f70174db059f5b0dea2eb69930cb7bc44fb54c421923bfeea052186b0cbdfb1693a2d43aeb80dff85ad941b28d8a0285dc1d62b2322848a69ca3e7b0967b71f31bca978a800181758e6405de0bcf5b91456f695a6dd964110d247a3c7addf1f78e3971cfc40189e45630675287ffe19a81fed830809d8e8c63b951faf41930fbae584b59783bb6446f4fc164fbd9b24a49429e2bf85e75fbc96c173a99a84aec76ded6fa912c07d3cee0bef40bb7d604439b0a0b9fff6bb2e7c008b7ce1df6bf4f8a101e054ade81fa58d3b424c1e2f84376fbe7389d6b2ed78e5c7aff0b3db96674ce56efe8e773ef8641ab705b682d1e44f7ca22dc8978a92b309914af9cea962f04402374010e84d5c5caba380c6b5fcdfb3faa2f7813dbc082b48db21430a77799e90249be54964906fe3fe13d6c8d9b2b0ffe8fb02d64f06eb79b32936709acc7d35d365f831554ac6c6965812adfb17369a36221a8df8166e3ceb266d8bb3df197de8404547a76a31ff704b6b1590927ae32c51e3e2e835237897c259ab216c4bdd8ec17db4e8ec0c08697e2bb3af</div><!-- end ProtectedContent --><script type="text/javascript">detect_and_decrypt()</script></div><!-- end Liner -->
+        </div><!-- end ContentColumn -->
+      </div><!-- end ContentWrapper -->
+
+      <div id="FooterWrapper">
+        <div id="Footer">
+          <div class="Liner">
+<!-- start: shared_blocks.30025552#above-bottom-nav --><!-- end: shared_blocks.30025552#above-bottom-nav -->
+<!-- start: shared_blocks.30025581#bottom-navigation --><!-- end: shared_blocks.30025581#bottom-navigation -->
+<!-- start: shared_blocks.30025549#below-bottom-nav --><!-- end: shared_blocks.30025549#below-bottom-nav -->
+<!-- start: shared_blocks.30025580#footer -->
+
+<hr style="width:60%;height:2px;margin-left:auto;margin-right:auto;">
+<script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '11lmGm']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+<!-- Start of Amazon Publisher Studio Loader -->    <script>  window.amznpubstudioTag = "hearing-protection-20";  </script>    <!-- Do not modify the following code ! -->  <script async="true" type="text/javascript" src="https://ps-us.amazon-adsystem.com/domains/musiandthin-20_0a1aaeb5-aebd-4c8d-bce6-0ff95f5f21a3.js" charset="UTF-8"></script>    <!-- End of Amazon Publisher Studio Loader -->  
+
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=fe200d77-1cfa-4dc7-af6e-d19b79c77ffd"></script>
+<p>© Copyright 2008 - 2017 Simon Horsey and Essentials For Music<br/>All Rights Reserved</p><p><br/><a style="font-family: avantgarderegular;font-size: 12px;color: rgb(0, 51, 0);" href="https://www.essential-music-practice.com/simon-horsey.html" onclick="return FIX.track(this);">About</a><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;">&#xa0;&#xa0; &#xa0; &#xa0; &#xa0; &#xa0;&#xa0;</span><span style="color: #003300;font-family: avantgarderegular;"><span style="font-size: 12px;"><a href="https://www.essential-music-practice.com/privacy-policy.com" onclick="return FIX.track(this);">Privacy Policy</a></span></span><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;"><a href="https://www.essential-music-practice.com/privacy-policy.com" onclick="return FIX.track(this);">&#xa0;&#xa0;</a> &#xa0; &#xa0; &#xa0; &#xa0;&#xa0;</span><a style="font-family: avantgarderegular;font-size: 12px;color: rgb(0, 51, 0);" href="https://www.essential-music-practice.com/disclaimer.html" onclick="return FIX.track(this);">Disclaimer</a><span style="color: rgb(0, 51, 0);font-family: avantgarderegular;font-size: 12px;">&#xa0;</span></p>
+<hr style="width:60%;height:2px;margin-left:auto;margin-right:auto;">
+
+<!-- end: shared_blocks.30025580#footer -->
+</div><!-- end Liner -->
+        </div><!-- end Footer -->
+      </div><!-- end FooterWrapper -->
+
+    </div><!-- end PageWrapper -->
+
+    
+    <script type="text/javascript" src="/sd/support-files/fix.js"></script>
+    
+    <script type="text/javascript">
+        FIX.doEndOfBody();
+    </script>
+    <script type="text/javascript" src="/sd/support-files/design.js"></script>
+<!-- start: tool_blocks.sbi_html_body_end -->
+    <script>
+        var SS_PARAMS = {
+            pinterest_enabled:true,
+            googleplus1_on_page:true,
+            socializeit_onpage:true};
+    </script>            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=232556283458134&autoLogAppEvents=1"></script><style>.g-recaptcha{ display:inline-block;} .recaptcha_wrapper{text-align:center}</style>
+	    <script> if (typeof recaptcha_callbackings !== "undefined") { SS_PARAMS.recaptcha_callbackings = recaptcha_callbackings || [] }; </script><script>
+  (function(d,id){
+    if (d.getElementById(id)) {return;}
+    var s=d.createElement('script');s.async=true;s.defer=true;
+        s.src = "/ssjs/ldr.js";s.id=id; d.getElementsByTagName('head')[0].appendChild(s);
+   })(document,'_ss_ldr_script');
+  </script><!-- end: tool_blocks.sbi_html_body_end -->
+  
+<!-- Generated at 19:35:01 09-Sep-2025 with cookingtime v159 -->
+
+<script async src="/ssjs/lazyload.min.js"></script>
+</body>
+</html>
