@@ -239,7 +239,8 @@ HERO_ART = '''<svg viewBox="0 0 520 460" width="520" height="460">
 LOGO = themed(LOGO)
 HERO_ART = themed(HERO_ART)
 
-# Draft only: lets you flip between themes on any page. Remembers the choice in the browser.
+# Optional, draft only ("theme_switcher": true in site.json): flip between themes on any page.
+SWITCH = DRAFT and bool(SITE.get('theme_switcher'))
 THEME_BOOT = ('<script>(function(){try{var q=new URLSearchParams(location.search).get("theme"),t=q||localStorage.getItem("emp-theme");'
               'if(t==="navy"||t==="violet"){document.documentElement.setAttribute("data-theme",t);if(q)localStorage.setItem("emp-theme",t);}}catch(e){}})();</script>')
 THEME_SWITCH = ('<div class="theme-switch" role="group" aria-label="Preview theme"><span>Theme</span>'
@@ -500,8 +501,8 @@ def build():
                '<link rel="alternate" type="application/rss+xml" title="%s" href="/music-practice.xml">\n'
                               '<link rel="stylesheet" href="/css/site.css">\n%s\n</head>\n<body>\n<a class="skip" href="#main">Skip to content</a>\n%s\n'
                '<main id="main">\n%s\n</main>\n%s\n%s<script src="/js/site.js" defer></script>\n</body>\n</html>\n'
-               % (e(SITE['locale']), THEME, THEME_BOOT if DRAFT else '', e(title), e(desc), URL + page['path'], robots, e(SITE['name']), e(title), e(desc), URL + page['path'], URL,
-                  e(SITE['name']), json_ld(page), head, main, foot, THEME_SWITCH if DRAFT else ''))
+               % (e(SITE['locale']), THEME, THEME_BOOT if SWITCH else '', e(title), e(desc), URL + page['path'], robots, e(SITE['name']), e(title), e(desc), URL + page['path'], URL,
+                  e(SITE['name']), json_ld(page), head, main, foot, THEME_SWITCH if SWITCH else ''))
         with open(os.path.join(DIST, 'index.html' if page['slug'] == 'index' else page['slug'] + '.html'), 'w', encoding='utf-8') as f:
             f.write(doc)
 

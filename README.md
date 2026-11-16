@@ -18,9 +18,9 @@ engines are told not to index the site. Fill a `null` in and its tag goes. Set `
 
 ## Themes
 
-`"theme"` in `site.json` is `"navy"` (the look shared with LearningForSuccess) or `"violet"` (the Essentials For Music
-brand guide: violet, buff, green, Source Sans 3). While the site is in draft, a Theme switch at the bottom right of every
-page flips between them, and adding `?theme=violet` to any address does the same.
+`"theme"` in `site.json` is `"navy"` (the chosen look, shared with LearningForSuccess) or `"violet"` (the Essentials For Music
+brand guide colours and Source Sans 3, kept as an option). To compare them again, set `"theme_switcher": true` while the site
+is in draft: a Theme switch appears at the bottom right of every page.
 
 ## Run it
 
